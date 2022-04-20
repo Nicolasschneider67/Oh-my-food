@@ -21,9 +21,12 @@
             <label> <i class="fa-solid fa-location-dot"></i> </label>
             <input type="text" value="Paris, Belleville" class="reservation__barre-recherche"/>  
           </div>  
+
+          <div class="reservation__tablette">                                <!--Balise crée pour le reponsive-->
               <div class ="reservation__titre"><h1>Réserver le menu qui vous convient</h1></div>
                 <div class="reservation__texte"><p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p></div>
-                  <button type="submit" id="bouton_resa"><p>Explorer nos restaurants</p></button>       
+                  <button type="submit" id="bouton_resa"><p>Explorer nos restaurants</p></button>  
+          </div>     
         </form>      
       </article>
      
@@ -31,7 +34,7 @@
         <div class="fonctionnement">    
           <ul>
             <div class="fonctionnement__titre"><h1>Fonctionnement</h1></div>
-            <li><span class="icone-fonctionnement"><i class="fa-solid fa-mobile-screen"></i></span>Choisissez un restaurant</li>
+            <li><span class="icone-fonctionnement"><i class="fa-solid fa-mobile-screen"></i></span><span class="icone-trop-grande">Choisissez un restaurant</span></li>   <!--Comme l'icone est plus grande que les autres elle rajoute du décallage-->
             <li><span class="icone-fonctionnement"><i class="fa-solid fa-list-ul"></i></span>Composez votre menu</li>
             <li><span class="icone-fonctionnement"><i class="fa-solid fa-store"></i></span>Dégustez au restaurant</li>
           </ul>
@@ -40,8 +43,9 @@
       </nav>
 
       <main>                                                                    <!--Partie principale avec les restaurants-->
+        <div class="rang-1">                                                    <!--On créer des rangs pour un meilleur responsive en tablette et +-->
           <div class="carte">
-            <h1>Restaurants</h1>
+            <h1>Restaurants</h1>                                                <!--On rajoute le titre dans la classe carte pour que le titre suive correctement en responsive-->
             <div class="carte__image"><img src="../images/la-palette.jpg" class="la-palette" class="restaurant la palette du goût"></div>
               <div class="carte__contenu">
                 <p class="carte__titre">La palette du goût</p>
@@ -60,7 +64,9 @@
                 <p class="carte__nouveau">Nouveau</p>
               </div>
           </div>
-          
+        </div> 
+
+        <div class="rang-2">
           <div class="carte carte--3">
             <div class="carte__image"><img src="../images/a-la-francaise.jpg" class="la-francaise" class="restaurant à la française"></div>
               <div class="carte__contenu">
@@ -78,6 +84,7 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
           </div>
+        </div> 
       </main>
 
       <foother>
@@ -87,7 +94,7 @@
             <p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p>
             <p><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</p>
             <p>Mentions légales</p>
-            <p>Contact</p>
+            <p><a href="mailto:#">Contact</a></p>
           </nav>
         </div>
       </foother>

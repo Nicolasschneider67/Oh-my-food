@@ -68,7 +68,7 @@
         }    
     }
     
-    form{height: 340px};
+    form{height: 330px};
     .fonctionnement                         /*Affichage de la nav*/
     {
         @include centrer(column, center);
@@ -87,17 +87,15 @@
             text-align: center;
             max-width: 100%;
             position: relative;
-            margin-top: 100px;
+            margin-top: 90px;
         }
 
         &__titre 
         { 
-            margin-top: 45px;
             @include titre (map-get($taille-size,p)); 
             position: absolute;
             left: 0px;
-            top: -90px;
-
+            top: -35px;
         }
 
         li                                                              /*Affichage de la puce + le cadre*/
@@ -146,7 +144,6 @@
         h1
         {   
             @include titre(map-get($taille-size,coeur));
-            @include marge-auto;
             position: absolute;
             top: 50px;
         }
@@ -194,13 +191,15 @@
             {
                 position: absolute;
                 background: $couleur-ter;
-                top: -190px;
+                border-radius: 10px;
+                top: -200px;
                 right: 15px;
                 width: 95px;
-                height: 40px;
-                @include centrer(center);
+                height: 30px;
+                @include centrer(center, center);
                 color:hsl(160, 86%, 22%);
                 font-weight: bold;
+                font-size: 16px;
             }
         }
     
@@ -230,9 +229,15 @@
             flex-direction: column;
             height: 160px;
             padding-bottom: 40px;
+            font-size: 15px;
         }
 
-        .fa-utensils  {margin-right: 17px;}
-        .fa-handshake-angle {margin-right: 10px;}
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        .fa-utensils  {margin-right: 13px;}         /*On précise une marge supplémentaire pour l'alignement*/
+        .fa-handshake-angle {margin-right: 6px;}
     }
 }
