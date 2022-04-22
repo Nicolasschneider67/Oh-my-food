@@ -52,6 +52,7 @@
         border-radius: 25px;
         padding: 20px 20px 0px 20px;
         background:$background;
+        position: relative;                     /*On joue avec les positions pour que le bouton ne change pas de position avec les marges du texte*/
     }
 
     .reservation__tablette h1
@@ -59,7 +60,6 @@
         @include titre(map-get($taille-size-t,h1));
         text-align: center;
         line-height: 35px;
-        margin-bottom: 15px;
         margin-bottom: 40px;
     }
 
@@ -71,13 +71,17 @@
 
     #bouton_resa
     {
-        @include logo-bouton(280px, 70px, 19px, 35px);
+        @include logo-bouton(280px, 70px, 19px);
         background: linear-gradient($couleur-sec, $couleur-pr);
         border: white;
         box-shadow: $ombrage;
         font-weight: 0.9;
         padding-top: 18px;
         padding-bottom: 20px;
+        position: absolute;                                                 /*on joue sur la position pour qu'il reste en bas du cadre et centré*/
+        bottom: 20px;    
+        left: 5%;
+        right: 5%; 
     }
 
     .fonctionnement                     /*nav*/
@@ -148,20 +152,18 @@
         
         main                                                /*Partie repas*/
     {
-        margin-top: 60px;
+        margin-top: 65px;
         background: $background;
         position: relative;
-        padding-top: 80px;
-        padding-left: $marge-t;
-        padding-right:  $marge-t;
-
+        padding: 90px $marge 0px $marge;
+        margin-bottom: 20px;
         
         h1
         {   
             @include titre(map-get($taille-size-t,h1));
             position: absolute;
             top: 20px;
-            padding-right: 180px;
+            padding-right: 70%;
             padding-bottom: 2px;
             border-bottom: 10px solid $couleur-pr;
             border-bottom-style: double;
@@ -241,7 +243,7 @@
             margin-left: $marge;
             font-family: 'shrikhandregular';
             font-size: map-get($taille-size-t, icone);
-            padding-top: 25px;
+            padding-top: 30px;
             margin-bottom: 20px;
         }
 
@@ -253,7 +255,7 @@
             display: flex;
             flex-direction: column;
             height: 160px;
-            padding-bottom: 40px;
+            padding-bottom: 30px;
             font-size: 17px;
         }
         

@@ -1,0 +1,132 @@
+@media (min-width: 769px)           /*Partie tablette*/
+{
+    .fa-arrow-left                                      /*en tete*/
+    {
+        font-size:40px;
+        margin: 20px 0px 0px $marge;
+        text-shadow: 3px 1px 3px $couleur-ter;         /*On rajoute un cercle ainsni qu'un ombrage tout en respectant la pate graphique initiale*/
+    }
+
+    .logo
+    {
+        margin-top: -50px;
+        padding-bottom: 25px;
+    }
+
+    .la-francaise-menu                                    
+    {
+        width: 100%;
+    }
+
+    main
+    {
+        margin-top: 0px;                                /*Le bloc main se supperpose au bloc menu, pour ne pas le voir nous lui definissions des marges à 0 et changeons la couleur de fond*/
+        background: $background;
+        position: relative;
+        padding: 0px;
+        margin-bottom: 0px;
+        height: 0px;
+    }
+
+    .menu
+    {
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        position: relative;                             /*Il suffit de mettre une position relative, monter la balise et lui accorder un border-radius pour avoir l'effet demandé*/
+        bottom: 90px;
+        background: $background;
+        padding-top: 100px;
+        padding-bottom: 80px;
+
+
+        h1
+        {
+            font-family: 'shrikhandregular', verdana, arial, helvetica, sans-serif;     
+            padding-top: 30px;
+            margin-left: $marge-t;
+            font-size: 6vw;                 /*On diminue la taille du titre ainsi que de l'icone*/                    /*On utilise cette police pour que le titre s'accorde à la résolution afin que l'écran ne paraisse pas trop vide en grande resolution*/
+            border-bottom: 0px;
+            padding-right: 0px;
+        }
+
+            .fa-heart                                       /*On enlève le space-between pour placer l'icone en absolute*/
+            {
+                font-size:5.5vw;
+                position: absolute;
+                right: $marge-t;
+                top: $marge-t;
+                opacity: 0.8;
+            }
+        }
+
+        article{margin-bottom: 50px;}
+        .composition
+        {
+            flex-direction: column;
+            margin-left: $marge;
+            margin-right: $marge;
+
+            &__titre                    /*On adopte une taille de polcie et de bordure en vw pour s'adapter à la résolution*/
+            {
+                text-transform: uppercase;
+                font-size: map-get($taille-size-t, p);
+                font-weight: 200;
+                opacity: 0.7;
+                margin-left: $marge;
+                margin-top: 30px;
+                @include souligner (4px solid $couleur-ter, 5px, 40px);
+            }
+
+            .cadre                                                      /*Nous arrêtons le nesting au bloc parent pour une meilleure lisibilité*/
+            {
+                background: white;
+                border-radius: 15px;
+                box-shadow: $ombrage;
+                margin: 5px $marge 10px $marge;
+                display: flex;
+
+                .composition__plat 
+               {
+                   padding-left: $marge;
+                   padding-right: 20px;
+                   margin-bottom: 0px;
+                   margin-top: 10px;
+                   width: 450px;  
+               }
+               
+                .composition__commentaire
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 40px 10px 0px;
+                    width: 100%;
+
+                }
+            }
+        }
+
+        #bouton_resa
+        {
+            @include logo-bouton(290px, 75px, 30px, 100px);
+            background: linear-gradient($couleur-sec, $couleur-pr);
+            border: white;
+            box-shadow: $ombrage;  
+            position: relative;
+            
+            p{font-size: map-get($taille-size-t,icone)}
+        }
+
+    .foother                                            /*bas de page*/
+    {
+        background: rgb(41, 37, 37); 
+        margin-top: 950px;
+        @include centrer(column, center);
+
+        &__titre
+        {
+            padding-top: 120px;
+        }
+
+    }
+
+}

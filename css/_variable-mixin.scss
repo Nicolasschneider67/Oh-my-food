@@ -1,9 +1,9 @@
 $couleur-pr:#9356DC;                                            /*Définition des variables*/
 $couleur-sec: #FF79DA;
 $couleur-ter: #99E2D0;
-$background:  #dae4e062;                            
+$background:  #f3f7f6;                            
 
-$taille-size:(p:17px, icone:19px, logo: 20px, h1:21px, coeur:25px);
+$taille-size:(p:17px, icone:19px, logo: 20px, h1:21px, coeur:25px, grand-coeur: 30px);
 $taille-size-t:(p:19px, icone:24px, logo: 25px, h1:28px, coeur:30px);
 
 $interligne:(h1: 30px, p:23px);
@@ -44,4 +44,11 @@ $marge-t: 40px;
     font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
     font-size: $taille-size;
     font-weight: 600;
+}
+
+@mixin souligner ($border-bottom: 1px solid black, $padding-bottom: 5px, $width: auto )
+{
+    border-bottom: $border-bottom;
+    padding-bottom: $padding-bottom;
+    width: $width;
 }

@@ -56,7 +56,7 @@ body, h1, p {
     -ms-flex-direction: column;
         flex-direction: column;
     margin-top: 15px;
-    background: #f3f7f6;
+    background: #dae4e062;
   }
   body .reservation .icone-plus-barre, h1 .reservation .icone-plus-barre, p .reservation .icone-plus-barre {
     display: -webkit-box;
@@ -174,7 +174,7 @@ body, h1, p {
     display: -ms-flexbox;
     display: flex;
     line-height: 30px;
-    background: #f3f7f6;
+    background: #dae4e062;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -204,24 +204,24 @@ body, h1, p {
     margin-right: 20px;
     opacity: 0.5;
   }
-  body .main-accueil, h1 .main-accueil, p .main-accueil {
+  body main, h1 main, p main {
     margin-top: 35px;
     padding-top: 40px;
-    background: #f3f7f6;
+    background: #dae4e062;
     height: 1345px;
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
     padding-top: 110px;
   }
-  body .main-accueil h1, h1 .main-accueil h1, p .main-accueil h1 {
+  body main h1, h1 main h1, p main h1 {
     font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
     font-size: 25px;
     font-weight: 600;
     position: absolute;
     top: 50px;
   }
-  body .main-accueil .carte, h1 .main-accueil .carte, p .main-accueil .carte {
+  body main .carte, h1 main .carte, p main .carte {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -231,7 +231,7 @@ body, h1, p {
     height: 275px;
     max-width: 500px;
   }
-  body .main-accueil .carte .la-palette, body .main-accueil .carte .note-enchantee, body .main-accueil .carte .la-francaise, body .main-accueil .carte .delice-des-sens, h1 .main-accueil .carte .la-palette, h1 .main-accueil .carte .note-enchantee, h1 .main-accueil .carte .la-francaise, h1 .main-accueil .carte .delice-des-sens, p .main-accueil .carte .la-palette, p .main-accueil .carte .note-enchantee, p .main-accueil .carte .la-francaise, p .main-accueil .carte .delice-des-sens {
+  body main .carte .la-palette, body main .carte .note-enchantee, body main .carte .la-francaise, body main .carte .delice-des-sens, h1 main .carte .la-palette, h1 main .carte .note-enchantee, h1 main .carte .la-francaise, h1 main .carte .delice-des-sens, p main .carte .la-palette, p main .carte .note-enchantee, p main .carte .la-francaise, p main .carte .delice-des-sens {
     width: 100%;
     height: 200px;
     -o-object-fit: cover;
@@ -239,19 +239,19 @@ body, h1, p {
     border-radius: 20px 20px 0px 0px;
     margin-bottom: 10px;
   }
-  body .main-accueil .carte__contenu, h1 .main-accueil .carte__contenu, p .main-accueil .carte__contenu {
+  body main .carte__contenu, h1 main .carte__contenu, p main .carte__contenu {
     position: relative;
   }
-  body .main-accueil .carte__titre, h1 .main-accueil .carte__titre, p .main-accueil .carte__titre {
+  body main .carte__titre, h1 main .carte__titre, p main .carte__titre {
     font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
     font-size: 19px;
     font-weight: 600;
     margin-left: 15px;
   }
-  body .main-accueil .carte__adresse, h1 .main-accueil .carte__adresse, p .main-accueil .carte__adresse {
+  body main .carte__adresse, h1 main .carte__adresse, p main .carte__adresse {
     margin-left: 15px;
   }
-  body .main-accueil .carte .fa-heart, h1 .main-accueil .carte .fa-heart, p .main-accueil .carte .fa-heart {
+  body main .carte .fa-heart, h1 main .carte .fa-heart, p main .carte .fa-heart {
     font-size: 25px;
     opacity: 0.8;
     position: absolute;
@@ -259,7 +259,7 @@ body, h1, p {
     right: 20px;
     margin-bottom: 0px;
   }
-  body .main-accueil .carte__nouveau, h1 .main-accueil .carte__nouveau, p .main-accueil .carte__nouveau {
+  body main .carte__nouveau, h1 main .carte__nouveau, p main .carte__nouveau {
     position: absolute;
     background: #99E2D0;
     border-radius: 10px;
@@ -392,7 +392,7 @@ body, h1, p {
             box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
     border-radius: 25px;
     padding: 20px 20px 0px 20px;
-    background: #f3f7f6;
+    background: #dae4e062;
     position: relative;
     /*On joue avec les positions pour que le bouton ne change pas de position avec les marges du texte*/
   }
@@ -440,7 +440,7 @@ body, h1, p {
             box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
     border-radius: 25px;
     padding-top: 5px;
-    background: #f3f7f6;
+    background: #dae4e062;
   }
   body ul, h1 ul, p ul {
     counter-reset: compteur;
@@ -541,351 +541,7 @@ body, h1, p {
   }
   body main, h1 main, p main {
     margin-top: 65px;
-    background: #f3f7f6;
-    position: relative;
-    padding: 90px 20px 0px 20px;
-    margin-bottom: 20px;
-  }
-  body main h1, h1 main h1, p main h1 {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    position: absolute;
-    top: 20px;
-    padding-right: 70%;
-    padding-bottom: 2px;
-    border-bottom: 10px solid #9356DC;
-    border-bottom-style: double;
-  }
-  body main .rang-1, body main .rang-2, h1 main .rang-1, h1 main .rang-2, p main .rang-1, p main .rang-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  body main .carte, h1 main .carte, p main .carte {
-    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    border-radius: 20px;
-    height: 280px;
-    width: 400px;
-    max-width: 100%;
-    margin: 0px 20px 30px 20px;
-  }
-  body main .carte .la-palette, body main .carte .note-enchantee, body main .carte .la-francaise, body main .carte .delice-des-sens, h1 main .carte .la-palette, h1 main .carte .note-enchantee, h1 main .carte .la-francaise, h1 main .carte .delice-des-sens, p main .carte .la-palette, p main .carte .note-enchantee, p main .carte .la-francaise, p main .carte .delice-des-sens {
-    width: 400px;
-    max-width: 100%;
-    height: 200px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-    margin-bottom: 10px;
-  }
-  body main .carte__contenu, h1 main .carte__contenu, p main .carte__contenu {
-    position: relative;
-  }
-  body main .carte__titre, h1 main .carte__titre, p main .carte__titre {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 19px;
-    font-weight: 600;
-    margin-left: 15px;
-  }
-  body main .carte__adresse, h1 main .carte__adresse, p main .carte__adresse {
-    margin-left: 15px;
-  }
-  body main .carte .fa-heart, h1 main .carte .fa-heart, p main .carte .fa-heart {
-    font-size: 25px;
-    opacity: 0.8;
-    position: absolute;
-    top: 8px;
-    right: 20px;
-    margin-bottom: 0px;
-  }
-  body main .carte__nouveau, h1 main .carte__nouveau, p main .carte__nouveau {
-    position: absolute;
-    background: #99E2D0;
-    border-radius: 10px;
-    top: -200px;
-    right: 15px;
-    width: 105px;
-    height: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: center;
-            flex-direction: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #086848;
-    font-weight: bold;
-  }
-  body .foother, h1 .foother, p .foother {
-    background: #292525;
-    padding-left: 40px;
-    /*On précise une marge supplémentaire pour l'alignement*/
-  }
-  body .foother__titre, h1 .foother__titre, p .foother__titre {
-    color: white;
-    margin-left: 20px;
-    font-family: 'shrikhandregular';
-    font-size: 24px;
-    padding-top: 30px;
-    margin-bottom: 20px;
-  }
-  body .foother__nav, h1 .foother__nav, p .foother__nav {
-    color: white;
-    margin-left: 20px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 160px;
-    padding-bottom: 30px;
-    font-size: 17px;
-  }
-  body .foother a, h1 .foother a, p .foother a {
-    text-decoration: none;
-    color: white;
-  }
-  body .foother .fa-utensils, h1 .foother .fa-utensils, p .foother .fa-utensils {
-    margin-right: 17px;
-  }
-  body .foother .fa-handshake-angle, h1 .foother .fa-handshake-angle, p .foother .fa-handshake-angle {
-    margin-right: 10px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  body, h1, p {
-    /*Cette icone a une taille différente des autres et ajoute un décalage au texte*/
-  }
-  body p, h1 p, p p {
-    font-size: 19px;
-  }
-  body h1, h1 h1, p h1 {
-    font-size: 28px;
-  }
-  body header, h1 header, p header {
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
-    margin-top: 0px;
-  }
-  body .logo, h1 .logo, p .logo {
-    width: 400px;
-    height: auto;
-    font-size: 17px;
-    margin: 25px auto 0px auto;
-    display: block;
-    border-radius: 100px;
-    color: white;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 20px;
-  }
-  body .icone-plus-barre, h1 .icone-plus-barre, p .icone-plus-barre {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: normal;
-            flex-direction: normal;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: normal;
-        -ms-flex-align: normal;
-            align-items: normal;
-    height: 50px;
-    background: #9356DC;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    height: 70px;
-  }
-  body .reservation__barre-recherche, h1 .reservation__barre-recherche, p .reservation__barre-recherche {
-    font-size: 25px;
-    border: 0px;
-    background: #9356DC;
-  }
-  body .fa-location-dot, h1 .fa-location-dot, p .fa-location-dot {
-    font-size: 25px;
-    margin-right: 15px;
-    padding-top: 7px;
-    padding-left: 10px;
-  }
-  body .reservation__tablette, h1 .reservation__tablette, p .reservation__tablette {
-    margin-top: 45px;
-    margin-left: 40px;
-    width: 40%;
-    height: 325px;
-    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    border-radius: 25px;
-    padding: 20px 20px 0px 20px;
-    background: #f3f7f6;
-    position: relative;
-    /*On joue avec les positions pour que le bouton ne change pas de position avec les marges du texte*/
-  }
-  body .reservation__tablette h1, h1 .reservation__tablette h1, p .reservation__tablette h1 {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 35px;
-    margin-bottom: 40px;
-  }
-  body .reservation__tablette p, h1 .reservation__tablette p, p .reservation__tablette p {
-    text-align: center;
-    line-height: 23px;
-  }
-  body #bouton_resa, h1 #bouton_resa, p #bouton_resa {
-    width: 280px;
-    height: 70px;
-    font-size: 19px;
-    margin: 25px auto 0px auto;
-    display: block;
-    border-radius: 100px;
-    color: white;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
-    border: white;
-    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    font-weight: 0.9;
-    padding-top: 18px;
-    padding-bottom: 20px;
-    position: absolute;
-    /*on joue sur la position pour qu'il reste en bas du cadre et centré*/
-    bottom: 20px;
-    left: 5%;
-    right: 5%;
-  }
-  body .fonctionnement, h1 .fonctionnement, p .fonctionnement {
-    position: absolute;
-    right: 0px;
-    top: 204px;
-    width: 45%;
-    margin-right: 40px;
-    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    border-radius: 25px;
-    padding-top: 5px;
-    background: #f3f7f6;
-  }
-  body ul, h1 ul, p ul {
-    counter-reset: compteur;
-    border-radius: 20px;
-    font-size: 20px;
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 10px 10px 15px 10px;
-    padding-left: 0px;
-  }
-  body__titre, h1__titre, p__titre {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-  }
-  body li, h1 li, p li {
-    width: 400px;
-    height: 60px;
-    font-size: 17px;
-    margin: 15px 0px 10px 0px;
-    display: block;
-    border-radius: 15px;
-    color: black;
-    counter-increment: compteur;
-    background: white;
-    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: center;
-            flex-direction: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 370px;
-    max-width: 90%;
-    position: relative;
-    padding-left: 20px;
-  }
-  body li::before, h1 li::before, p li::before {
-    background: #9356DC;
-    content: counter(compteur);
-    width: 26px;
-    height: 28px;
-    font-size: 16px;
-    margin: 0px 0px 0px 0px;
-    display: block;
-    border-radius: 50%;
-    color: white;
-    position: absolute;
-    left: -19px;
-    top: 13px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: normal;
-            flex-direction: normal;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 35px;
-    height: 35px;
-  }
-  body .icone-fonctionnement, h1 .icone-fonctionnement, p .icone-fonctionnement {
-    font-size: 20px;
-    left: 35px;
-    opacity: 0.5;
-    position: absolute;
-  }
-  body .icone-trop-grande, h1 .icone-trop-grande, p .icone-trop-grande {
-    padding-left: 20px;
-  }
-  body main, h1 main, p main {
-    margin-top: 65px;
-    background: #f3f7f6;
+    background: #dae4e062;
     position: relative;
     padding: 90px 20px 0px 20px;
     margin-bottom: 20px;
@@ -1083,7 +739,7 @@ body, h1, p {
             box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
     border-radius: 25px;
     padding: 20px 20px 0px 20px;
-    background: #f3f7f6;
+    background: #dae4e062;
     position: absolute;
     /*On change la position en absolute avec une marge en pourcentage pour le responsive*/
     left: -450px;
@@ -1134,7 +790,7 @@ body, h1, p {
             box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
     border-radius: 25px;
     padding-top: 5px;
-    background: #f3f7f6;
+    background: #dae4e062;
   }
   body ul, h1 ul, p ul {
     counter-reset: compteur;
@@ -1235,7 +891,7 @@ body, h1, p {
   }
   body main, h1 main, p main {
     margin-top: 445px;
-    background: #f3f7f6;
+    background: #dae4e062;
     position: relative;
     padding: 90px 40px 20px 40px;
   }
@@ -1376,288 +1032,6 @@ body, h1, p {
   }
   body .foother .fa-handshake-angle, h1 .foother .fa-handshake-angle, p .foother .fa-handshake-angle {
     margin-right: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  body .fa-arrow-left, h1 .fa-arrow-left, p .fa-arrow-left {
-    font-size: 23px;
-    opacity: 0.8;
-    margin: 20px 0px 0px 20px;
-  }
-  body .logo, h1 .logo, p .logo {
-    margin-top: -25px;
-  }
-  body .la-francaise-menu, h1 .la-francaise-menu, p .la-francaise-menu {
-    max-width: 100%;
-    margin-top: 15px;
-  }
-  body .menu, h1 .menu, p .menu {
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    position: relative;
-    /*Il suffit de mettre une position relative, monter la balise et lui accorder un border-radius pour avoir l'effet demandé*/
-    bottom: 60px;
-    background: #f3f7f6;
-    padding-bottom: 100px;
-    margin-bottom: -60px;
-  }
-  body .menu__titre, h1 .menu__titre, p .menu__titre {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  body .menu__titre h1, h1 .menu__titre h1, p .menu__titre h1 {
-    font-family: 'shrikhandregular', verdana, arial, helvetica, sans-serif;
-    padding-top: 40px;
-    margin-left: 20px;
-    font-size: 7.5vw;
-    /*On utilise cette police pour que le titre s'accorde à la résolution afin que l'écran ne paraisse pas trop vide en grande resolution*/
-  }
-  body .menu__titre .fa-heart, h1 .menu__titre .fa-heart, p .menu__titre .fa-heart {
-    font-size: 6.8vw;
-    padding-top: 40px;
-    margin-right: 35px;
-    opacity: 0.8;
-  }
-  body .menu .composition, h1 .menu .composition, p .menu .composition {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: 20px;
-  }
-  body .menu .composition__titre, h1 .menu .composition__titre, p .menu .composition__titre {
-    text-transform: uppercase;
-    font-size: 17px;
-    font-weight: 200;
-    opacity: 0.7;
-    margin-top: 30px;
-    border-bottom: 4px solid #99E2D0;
-    padding-bottom: 5px;
-    width: 40px;
-  }
-  body .menu .cadre, h1 .menu .cadre, p .menu .cadre {
-    background: white;
-    border-radius: 15px;
-    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    margin: 5px 20px 10px 0px;
-  }
-  body .menu .cadre .composition__plat, h1 .menu .cadre .composition__plat, p .menu .cadre .composition__plat {
-    padding-left: 10px;
-    margin-bottom: -8px;
-    margin-top: 10px;
-  }
-  body .menu .cadre .composition__commentaire, h1 .menu .cadre .composition__commentaire, p .menu .cadre .composition__commentaire {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 10px 20px 10px 10px;
-  }
-  body .menu #bouton_resa, h1 .menu #bouton_resa, p .menu #bouton_resa {
-    width: 230px;
-    height: 60px;
-    font-size: 18px;
-    margin: 50px auto 0px auto;
-    display: block;
-    border-radius: 100px;
-    color: white;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
-    border: white;
-    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-  }
-  body .menu .foother, h1 .menu .foother, p .menu .foother {
-    background: #292525;
-    /*On précise une marge supplémentaire pour l'alignement*/
-  }
-  body .menu .foother__titre, h1 .menu .foother__titre, p .menu .foother__titre {
-    color: white;
-    margin-left: 20px;
-    font-family: 'shrikhandregular';
-    font-size: 19px;
-    padding-top: 25px;
-    margin-bottom: 20px;
-  }
-  body .menu .foother__nav, h1 .menu .foother__nav, p .menu .foother__nav {
-    color: white;
-    margin-left: 20px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 160px;
-    padding-bottom: 40px;
-    font-size: 15px;
-  }
-  body .menu .foother a, h1 .menu .foother a, p .menu .foother a {
-    text-decoration: none;
-    color: white;
-  }
-  body .menu .foother .fa-utensils, h1 .menu .foother .fa-utensils, p .menu .foother .fa-utensils {
-    margin-right: 13px;
-  }
-  body .menu .foother .fa-handshake-angle, h1 .menu .foother .fa-handshake-angle, p .menu .foother .fa-handshake-angle {
-    margin-right: 6px;
-  }
-}
-
-@media (min-width: 769px) {
-  body .fa-arrow-left, h1 .fa-arrow-left, p .fa-arrow-left {
-    font-size: 40px;
-    margin: 20px 0px 0px 20px;
-    text-shadow: 3px 1px 3px #99E2D0;
-    /*On rajoute un cercle ainsni qu'un ombrage tout en respectant la pate graphique initiale*/
-  }
-  body .logo, h1 .logo, p .logo {
-    margin-top: -50px;
-    padding-bottom: 25px;
-  }
-  body .la-francaise-menu, h1 .la-francaise-menu, p .la-francaise-menu {
-    width: 100%;
-  }
-  body main, h1 main, p main {
-    margin-top: 0px;
-    /*Le bloc main se supperpose au bloc menu, pour ne pas le voir nous lui definissions des marges à 0 et changeons la couleur de fond*/
-    background: #f3f7f6;
-    position: relative;
-    padding: 0px;
-    margin-bottom: 0px;
-    height: 0px;
-  }
-  body .menu, h1 .menu, p .menu {
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    position: relative;
-    /*Il suffit de mettre une position relative, monter la balise et lui accorder un border-radius pour avoir l'effet demandé*/
-    bottom: 90px;
-    background: #f3f7f6;
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
-  body .menu h1, h1 .menu h1, p .menu h1 {
-    font-family: 'shrikhandregular', verdana, arial, helvetica, sans-serif;
-    padding-top: 30px;
-    margin-left: 40px;
-    font-size: 6vw;
-    /*On diminue la taille du titre ainsi que de l'icone*/
-    /*On utilise cette police pour que le titre s'accorde à la résolution afin que l'écran ne paraisse pas trop vide en grande resolution*/
-    border-bottom: 0px;
-    padding-right: 0px;
-  }
-  body .menu .fa-heart, h1 .menu .fa-heart, p .menu .fa-heart {
-    font-size: 5.5vw;
-    position: absolute;
-    right: 40px;
-    top: 40px;
-    opacity: 0.8;
-  }
-  body article, h1 article, p article {
-    margin-bottom: 50px;
-  }
-  body .composition, h1 .composition, p .composition {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  body .composition__titre, h1 .composition__titre, p .composition__titre {
-    text-transform: uppercase;
-    font-size: 19px;
-    font-weight: 200;
-    opacity: 0.7;
-    margin-left: 20px;
-    margin-top: 30px;
-    border-bottom: 4px solid #99E2D0;
-    padding-bottom: 5px;
-    width: 40px;
-  }
-  body .composition .cadre, h1 .composition .cadre, p .composition .cadre {
-    background: white;
-    border-radius: 15px;
-    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    margin: 5px 20px 10px 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  body .composition .cadre .composition__plat, h1 .composition .cadre .composition__plat, p .composition .cadre .composition__plat {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-    width: 450px;
-  }
-  body .composition .cadre .composition__commentaire, h1 .composition .cadre .composition__commentaire, p .composition .cadre .composition__commentaire {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 10px 40px 10px 0px;
-    width: 100%;
-  }
-  body #bouton_resa, h1 #bouton_resa, p #bouton_resa {
-    width: 290px;
-    height: 75px;
-    font-size: 30px;
-    margin: 100px auto 0px auto;
-    display: block;
-    border-radius: 100px;
-    color: white;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
-    border: white;
-    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    position: relative;
-  }
-  body #bouton_resa p, h1 #bouton_resa p, p #bouton_resa p {
-    font-size: 24px;
-  }
-  body .foother, h1 .foother, p .foother {
-    background: #292525;
-    margin-top: 950px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body .foother__titre, h1 .foother__titre, p .foother__titre {
-    padding-top: 120px;
   }
 }
 /*# sourceMappingURL=style.css.map */
