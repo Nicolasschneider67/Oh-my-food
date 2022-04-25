@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../police/robotto/roboto-regular-webfont.eot');
+    src: url('../police/robotto/roboto-regular-webfont.eot') format('embedded-opentype'),
+         url('../police/robotto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../police/robotto/roboto-regular-webfont.woff') format('woff'),
+         url('../police/robotto/roboto-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: 'shrikhandregular';
+    src: url('../police/srilankaise/shrikhand-regular-webfont.eot');
+    src: url('../police/srilankaise/shrikhand-regular-webfont.eot') format('embedded-opentype'),
+         url('../police/srilankaise/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('../police/srilankaise/shrikhand-regular-webfont.woff') format('woff'),
+         url('../police/srilankaise/shrikhand-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  * {                                                                 /*Définition du border-box*/ 
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
+  }
+
+  p{font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;}
+  h1{font-family:'robotobold', verdana, arial, helvetica, sans-serif; font-weight: bold;}
+
+  
+  body, h1, p                                                              /*Définition des paramètres globaux*/
+  {
+    margin: 0px;
+   
+  
+  @import "variable-mixin";
+  @import "a-la-francaise-mobile";
+  @import "a-la-francaise-tablette";
+  @import "a-la-francaise-desktop";
+}
+  

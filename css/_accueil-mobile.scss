@@ -20,6 +20,7 @@
                 background: rgba(231, 224, 224, 0.781);
                 height: 50px;
                 border-top: 3px solid rgba(94, 91, 91, 0.25);
+                padding-left: 40px;
 
                 .fa-location-dot
                 {
@@ -45,6 +46,7 @@
                 text-align: center;
                 @include titre(17px);
                 line-height: map-get($interligne,h1);
+                font-weight: bold;
             }    
             
             .reservation__texte
@@ -140,6 +142,7 @@
         padding-right: $marge;
         position: relative;
         padding-top: 110px;
+        margin-bottom: -1000px;
         
         h1
         {   
@@ -208,7 +211,9 @@
     
     .foother
     {
-        background: rgb(41, 37, 37); 
+        background: $background-foother; 
+        position: relative;
+        top: 1000px;
 
         &__titre
         {
@@ -243,275 +248,4 @@
 }
 
 
-@media (min-width: 769px) and (max-width: 992px)           /*Partie tablette*/
-{
-    p{font-size: map-get($taille-size-t,p);}
-    h1{font-size: map-get($taille-size-t,h1);}
-    
-    header 
-    {
-        background: linear-gradient($couleur-sec, $couleur-pr);
-        margin-top: 0px; 
-    }
 
-    .logo                                                   /*Barre de recherche*/
-    {
-        @include logo-bouton(400px);
-        margin-bottom: 0px;
-        margin-top: 0px;
-        padding-top: 20px;
-    }
-
-    .icone-plus-barre
-    {
-        @include centrer;
-        height: 50px;   
-        background: $couleur-pr;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        height: 70px;
-    }
-
-    .reservation__barre-recherche
-    {
-        font-size: map-get($taille-size-t,logo);
-        border: 0px;
-        background: $couleur-pr;
-    }
-
-    .fa-location-dot
-    {
-        font-size: map-get($taille-size,coeur);
-        margin-right: 15px;
-        padding-top: 7px;
-        padding-left: 10px;  
-    }
-
-    .reservation__tablette              /*explorer les menus*/
-    {
-        margin-top: 45px;
-        margin-left: $marge-t;
-        width: 40%;
-        height: 325px;
-        box-shadow: $ombrage;
-        border-radius: 25px;
-        padding: 20px 20px 0px 20px;
-        background:$background;
-        position: relative;                     /*On joue avec les positions pour que le bouton ne change pas de position avec les marges du texte*/
-    }
-
-    .reservation__tablette h1
-    {
-        @include titre(map-get($taille-size-t,h1));
-        text-align: center;
-        line-height: 35px;
-        margin-bottom: 40px;
-    }
-
-    .reservation__tablette p
-    {
-        text-align: center;
-        line-height: map-get($interligne,p)
-    }
-
-    #bouton_resa
-    {
-        @include logo-bouton(280px, 70px, 19px);
-        background: linear-gradient($couleur-sec, $couleur-pr);
-        border: white;
-        box-shadow: $ombrage;
-        font-weight: 0.9;
-        padding-top: 18px;
-        padding-bottom: 20px;
-        position: absolute;                                                 /*on joue sur la position pour qu'il reste en bas du cadre et centré*/
-        bottom: 20px;    
-        left: 5%;
-        right: 5%; 
-    }
-
-    .fonctionnement                     /*nav*/
-    {
-        position: absolute;
-        right: 0px;
-        top: 204px;
-        width: 45%;
-        margin-right: $marge-t;
-        box-shadow: $ombrage;
-        border-radius: 25px;
-        padding-top: 5px;
-        background:$background;
-    }
-
-    ul
-        {
-            counter-reset: compteur;
-            border-radius: 20px;
-            font-size: 20px; 
-            list-style-type:none;
-            @include centrer(column,center);
-            margin: 10px 10px 15px 10px;
-            padding-left: 0px;
-        }
-
-        &__titre 
-        { 
-            @include titre (map-get($taille-size,p)); 
-        }
-
-        li                                                              /*Affichage de la puce + le cadre*/
-        {
-            @include logo-bouton (400px, 60px, map-get($taille-size,p), 15px, 0px, 10px, 0px, 15px, black);
-            counter-increment: compteur;
-            background: white; 
-            box-shadow: $ombrage;
-            @include titre;
-            @include centrer(center, center);
-            width: 370px;
-            max-width: 90%;
-            position: relative; 
-            padding-left: 20px;
-        }
-
-        li::before
-        {
-            background:$couleur-pr;    
-            content: counter(compteur);
-            @include logo-bouton (26px, 28px, 16px, 0px, 0px, 0px, 0px, 50%);
-            position: absolute;
-            left: -19px;
-            top: 13px;
-            @include centrer(normal, center);
-            width: 35px;
-            height: 35px;
-        }
-
-        .icone-fonctionnement
-        {
-            font-size: map-get($taille-size,logo);
-            left: 35px;
-            opacity: 0.5;
-            position: absolute;
-        }
-
-        .icone-trop-grande{padding-left: 20px;}             /*Cette icone a une taille différente des autres et ajoute un décalage au texte*/
-        
-        main                                                /*Partie repas*/
-    {
-        margin-top: 65px;
-        background: $background;
-        position: relative;
-        padding: 90px $marge 0px $marge;
-        margin-bottom: 20px;
-        
-        h1
-        {   
-            @include titre(map-get($taille-size-t,h1));
-            position: absolute;
-            top: 20px;
-            padding-right: 70%;
-            padding-bottom: 2px;
-            border-bottom: 10px solid $couleur-pr;
-            border-bottom-style: double;
-        }
-
-        .rang-1, .rang-2
-        {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .carte
-        {
-            box-shadow: $ombrage;
-            border-radius: 20px;
-            height: 280px;
-            width: 400px;
-            max-width: 100%;
-            margin: 0px 20px 30px 20px;
-
-        .la-palette, .note-enchantee, .la-francaise, .delice-des-sens
-            {
-                width: 400px;
-                max-width: 100%;
-                height: 200px;
-                -o-object-fit: cover;
-                   object-fit: cover;
-                border-radius: 20px 20px 0px 0px;
-                margin-bottom: 10px;
-            }
-
-            &__contenu{position: relative}
-
-            &__titre
-            {
-                @include titre(19px);
-                margin-left: 15px;      
-            }
-
-            &__adresse{margin-left: 15px;}
-
-            .fa-heart
-            {
-                font-size: map-get($taille-size, coeur);
-                opacity: 0.8;
-                position: absolute;
-                top: 8px;
-                right: 20px;
-                margin-bottom: 0px;
-            }
-
-            &__nouveau
-            {
-                position: absolute;
-                background: $couleur-ter;
-                border-radius: 10px;
-                top: -200px;
-                right: 15px;
-                width: 105px;
-                height: 30px;
-                @include centrer(center, center);
-                color:hsl(160, 86%, 22%);
-                font-weight: bold;
-            }
-        }
-
-    }
-
-    .foother                            /*Bas de page*/
-    {
-        background: rgb(41, 37, 37); 
-        padding-left: $marge-t;
-
-        &__titre
-        {
-            color: white;
-            margin-left: $marge;
-            font-family: 'shrikhandregular';
-            font-size: map-get($taille-size-t, icone);
-            padding-top: 30px;
-            margin-bottom: 20px;
-        }
-
-        &__nav
-        {
-            color: white;
-            margin-left: $marge;
-            justify-content: space-between;
-            display: flex;
-            flex-direction: column;
-            height: 160px;
-            padding-bottom: 30px;
-            font-size: 17px;
-        }
-        
-        a
-        {
-            text-decoration: none;
-            color: white;
-        }
-
-        .fa-utensils  {margin-right: 17px;}         /*On précise une marge supplémentaire pour l'alignement*/
-        .fa-handshake-angle {margin-right: 10px;}
-    }
-        
-}

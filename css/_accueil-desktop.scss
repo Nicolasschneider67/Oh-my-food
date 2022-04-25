@@ -65,6 +65,8 @@
         text-align: center;
         line-height: 35px;
         margin-bottom: 40px;
+        font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
+        font-weight: bold;
     }
 
     .reservation__tablette p
@@ -156,13 +158,19 @@
         }
 
         .icone-trop-grande{padding-left: 20px;}             /*Cette icone a une taille différente des autres et ajoute un décalage au texte*/
-        
+      
+        .main-accueil
+        {
+            padding-top: 100px;
+            background: $background;
+        }
+
         main                                                /*Partie repas*/
     {
         margin-top: 445px;
-        background: $background;
+        background: $background-foother;
         position: relative;
-        padding: 90px $marge-t 20px $marge-t;
+        padding: 90px $marge-t 50px $marge-t;
         
         h1
         {   
@@ -237,7 +245,7 @@
     
     .foother                            /*Bas de page*/
     {
-        background: rgb(41, 37, 37); 
+        background: $background-foother; 
         @include centrer (column, center);
 
         &__titre

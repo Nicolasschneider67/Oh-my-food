@@ -4,18 +4,22 @@
     {
         font-size:40px;
         margin: 20px 0px 0px $marge;
-        text-shadow: 3px 1px 3px $couleur-ter;         /*On rajoute un cercle ainsni qu'un ombrage tout en respectant la pate graphique initiale*/
+        text-shadow: 3px 1px 3px $couleur-ter;         /*On rajoute un ombrage tout en respectant la pate graphique initiale*/
     }
+
+    header {background: linear-gradient($couleur-sec, $couleur-pr);}
 
     .logo
     {
-        margin-top: -50px;
         padding-bottom: 25px;
+        @include logo-bouton(400px, auto, 17px, -40px);
     }
 
     .la-francaise-menu                                    
     {
         width: 100%;
+        margin-top: 30px;
+        border-radius: 40px;
     }
 
     main
@@ -35,8 +39,8 @@
         position: relative;                             /*Il suffit de mettre une position relative, monter la balise et lui accorder un border-radius pour avoir l'effet demandé*/
         bottom: 90px;
         background: $background;
-        padding-top: 100px;
-        padding-bottom: 80px;
+        padding-top: 10px;
+        padding-bottom: 90px;
 
 
         h1
@@ -44,14 +48,14 @@
             font-family: 'shrikhandregular', verdana, arial, helvetica, sans-serif;     
             padding-top: 30px;
             margin-left: $marge-t;
-            font-size: 6vw;                 /*On diminue la taille du titre ainsi que de l'icone*/                    /*On utilise cette police pour que le titre s'accorde à la résolution afin que l'écran ne paraisse pas trop vide en grande resolution*/
+            font-size: 5vw;                 /*On diminue la taille du titre ainsi que de l'icone*/                    /*On utilise cette police pour que le titre s'accorde à la résolution afin que l'écran ne paraisse pas trop vide en grande resolution*/
             border-bottom: 0px;
             padding-right: 0px;
         }
 
             .fa-heart                                       /*On enlève le space-between pour placer l'icone en absolute*/
             {
-                font-size:5.5vw;
+                font-size: 4.4vw;
                 position: absolute;
                 right: $marge-t;
                 top: $marge-t;
@@ -60,6 +64,7 @@
         }
 
         article{margin-bottom: 50px;}
+
         .composition
         {
             flex-direction: column;
@@ -82,7 +87,7 @@
                 background: white;
                 border-radius: 15px;
                 box-shadow: $ombrage;
-                margin: 5px $marge 10px $marge;
+                margin: 5px $marge 20px $marge;
                 display: flex;
 
                 .composition__plat 
@@ -100,7 +105,7 @@
                     justify-content: space-between;
                     padding: 10px 40px 10px 0px;
                     width: 100%;
-
+                    font-size: map-get($taille-size-t, p);
                 }
             }
         }
@@ -116,17 +121,43 @@
             p{font-size: map-get($taille-size-t,icone)}
         }
 
-    .foother                                            /*bas de page*/
-    {
-        background: rgb(41, 37, 37); 
-        margin-top: 950px;
-        @include centrer(column, center);
-
-        &__titre
+        .foother                            /*Bas de page*/
         {
-            padding-top: 120px;
-        }
+            background: rgb(41, 37, 37); 
+            padding-left: $marge-t;
+            position: relative;
+            top: 1080px;
 
-    }
+            &__titre
+            {
+                color: white;
+                margin-left: $marge;
+                font-family: 'shrikhandregular';
+                font-size: map-get($taille-size-t, icone);
+                padding-top: 30px;
+                margin-bottom: 20px;
+            }
+    
+            &__nav
+            {
+                color: white;
+                margin-left: $marge;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                height: 160px;
+                padding-bottom: 30px;
+                font-size: 17px;
+            }
+            
+            a
+            {
+                text-decoration: none;
+                color: white;
+            }
+    
+            .fa-handshake-angle {margin-right: 10px;}
+            .fa-utensils {margin-right: 13px;} 
+        }
 
 }
