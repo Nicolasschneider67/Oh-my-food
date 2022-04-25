@@ -41,20 +41,19 @@
             
             .reservation__titre
             {
-                margin: 40px auto 10px auto;
-                width: 280px;
+                margin: 40px auto 20px auto;
                 text-align: center;
-                @include titre(17px);
-                line-height: map-get($interligne,h1);
+                @include titre (map-get($taille-size, h1));
+                line-height: map-get($interligne, h1);
                 font-weight: bold;
+                
             }    
             
             .reservation__texte
             {
                 @extend.reservation__titre;
                 margin-top: 15px;
-                width: auto;
-                max-width: 90%;
+                max-width: 60%;
                 opacity: 0.8;
                 line-height: map-get($interligne,p);
                 font-weight: normal;
@@ -62,15 +61,20 @@
             
         #bouton_resa
         {
-            @include logo-bouton(230px, 50px, 17px, 30px);
-            background: linear-gradient($couleur-sec, $couleur-pr);
+            @include logo-bouton(280px, 70px, 21px, 30px);
+            background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
             border: white;
             box-shadow: $ombrage;
             font-weight: 0.9;
+
+            &:hover
+            {
+                @include hover;
+            }
         }    
     }
     
-    form{height: 330px};
+    form{height: 400px};                            /*On donne la hauteur du bloc grace a cette fonctionalité à cause de la position des autres blocs*/
     .fonctionnement                         /*Affichage de la nav*/
     {
         @include centrer(column, center);
@@ -94,10 +98,10 @@
 
         &__titre 
         { 
-            @include titre (map-get($taille-size,p)); 
+            @include titre (map-get($taille-size,h1)); 
             position: absolute;
             left: 0px;
-            top: -35px;
+            top: -40px;
         }
 
         li                                                              /*Affichage de la puce + le cadre*/
@@ -110,7 +114,7 @@
             background: $background; 
             align-items: center;
             box-shadow: $ombrage;
-            @include titre;
+            @include titre (map-get($taille-size, icone));
             width: 500px;
         }
 
@@ -135,20 +139,19 @@
     .main-accueil                           /*Toujours donner une classe aux balises pour éviter que les propriétés s'adapent sur d'autres pages*/
     {
         margin-top: 35px;
-        padding-top: 40px;
         background: $background;
         height: 1345px;
         padding-left: $marge;
         padding-right: $marge;
         position: relative;
-        padding-top: 110px;
+        padding-top: 130px;
         margin-bottom: -1000px;
         
         h1
         {   
-            @include titre(map-get($taille-size,coeur));
+            @include titre(30px);
             position: absolute;
-            top: 50px;
+            top: 60px;
         }
 
         .carte

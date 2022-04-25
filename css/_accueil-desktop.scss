@@ -78,7 +78,7 @@
     #bouton_resa
     {
         @include logo-bouton(280px, 70px, 19px);
-        background: linear-gradient($couleur-sec, $couleur-pr);
+        background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
         border: white;
         box-shadow: $ombrage;
         font-weight: 0.9;
@@ -104,6 +104,7 @@
         border-radius: 25px;
         padding-top: 5px;
         background:$background;
+        @include titre (map-get($taille-size,h1))
     }
 
     ul
@@ -117,18 +118,13 @@
             padding-left: 0px;
         }
 
-        &__titre 
-        { 
-            @include titre (map-get($taille-size,p)); 
-        }
-
         li                                                              /*Affichage de la puce + le cadre*/
         {
             @include logo-bouton (400px, 60px, map-get($taille-size,p), 15px, 0px, 10px, 0px, 15px, black);
             counter-increment: compteur;
             background: white; 
             box-shadow: $ombrage;
-            @include titre;
+            @include titre(map-get($taille-size-t,p));
             @include centrer(center, center);
             width: 370px;
             max-width: 90%;

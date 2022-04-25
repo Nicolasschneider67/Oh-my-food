@@ -5,6 +5,7 @@
         font-size:40px;
         margin: 20px 0px 0px $marge;
         text-shadow: 3px 1px 3px $couleur-ter;         /*On rajoute un ombrage tout en respectant la pate graphique initiale*/
+        color: black;
     }
 
     header {background: linear-gradient($couleur-sec, $couleur-pr);}
@@ -113,7 +114,7 @@
         #bouton_resa
         {
             @include logo-bouton(290px, 75px, 30px, 100px);
-            background: linear-gradient($couleur-sec, $couleur-pr);
+            background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
             border: white;
             box-shadow: $ombrage;  
             position: relative;
@@ -126,7 +127,7 @@
             background: rgb(41, 37, 37); 
             padding-left: $marge-t;
             position: relative;
-            top: 1080px;
+            top: 1070px;
 
             &__titre
             {

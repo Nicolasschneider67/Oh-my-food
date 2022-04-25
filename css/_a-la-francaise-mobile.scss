@@ -12,6 +12,8 @@
         opacity: 0.8;
         position: absolute;
         left: $marge;
+        text-decoration: none;
+        color: black;
     }
 
     .logo{width: 220px;}
@@ -99,7 +101,7 @@
         #bouton_resa
         {
             @include logo-bouton(230px, 60px, 18px, 50px);
-            background: linear-gradient($couleur-sec, $couleur-pr);
+            background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
             border: white;
             box-shadow: $ombrage;  
         } 

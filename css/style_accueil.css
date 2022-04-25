@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: 'robotobold';
-  src: url("roboto-bold-webfont.eot");
-  src: url("roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("roboto-bold-webfont.woff2") format("woff2"), url("roboto-bold-webfont.woff") format("woff"), url("roboto-bold-webfont.svg#robotobold") format("svg");
+  src: url("../police/robottobold/roboto-bold-webfont.eot");
+  src: url("../police/robottobold/roboto-bold-webfont.eot") format("embedded-opentype"), url("../police/robottobold/roboto-bold-webfont.woff2") format("woff2"), url("../police/robottobold/roboto-bold-webfont.woff") format("woff"), url("../police/robottobold/roboto-bold-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,11 +26,6 @@
 
 p {
   font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-}
-
-h1 {
-  font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
-  font-weight: bold;
 }
 
 * {
@@ -121,7 +116,7 @@ body, h1, p {
     left: -450px;
   }
   body .reservation__tablette h1, h1 .reservation__tablette h1, p .reservation__tablette h1 {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
     font-size: 28px;
     font-weight: 600;
     text-align: center;
@@ -142,8 +137,8 @@ body, h1, p {
     display: block;
     border-radius: 100px;
     color: white;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border: white;
     -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
             box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
@@ -169,6 +164,9 @@ body, h1, p {
     border-radius: 25px;
     padding-top: 5px;
     background: #f3f7f6;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
   }
   body ul, h1 ul, p ul {
     counter-reset: compteur;
@@ -191,11 +189,6 @@ body, h1, p {
     margin: 10px 10px 15px 10px;
     padding-left: 0px;
   }
-  body__titre, h1__titre, p__titre {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-  }
   body li, h1 li, p li {
     width: 400px;
     height: 60px;
@@ -208,8 +201,8 @@ body, h1, p {
     background: white;
     -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
             box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 17px;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
+    font-size: 19px;
     font-weight: 600;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -278,7 +271,7 @@ body, h1, p {
     padding: 90px 40px 50px 40px;
   }
   body main h1, h1 main h1, p main h1 {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
     font-size: 28px;
     font-weight: 600;
     position: absolute;
@@ -323,7 +316,7 @@ body, h1, p {
     position: relative;
   }
   body main .carte__titre, h1 main .carte__titre, p main .carte__titre {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
     font-size: 19px;
     font-weight: 600;
     margin-left: 15px;
@@ -489,14 +482,12 @@ body, h1, p {
     /*On joue avec les positions pour que le bouton ne change pas de position avec les marges du texte*/
   }
   body .reservation__tablette h1, h1 .reservation__tablette h1, p .reservation__tablette h1 {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
     font-size: 28px;
     font-weight: 600;
     text-align: center;
     line-height: 35px;
     margin-bottom: 40px;
-    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
-    font-weight: bold;
   }
   body .reservation__tablette p, h1 .reservation__tablette p, p .reservation__tablette p {
     text-align: center;
@@ -510,8 +501,8 @@ body, h1, p {
     display: block;
     border-radius: 100px;
     color: white;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border: white;
     -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
             box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
@@ -535,6 +526,9 @@ body, h1, p {
     border-radius: 25px;
     padding-top: 5px;
     background: #f3f7f6;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
   }
   body ul, h1 ul, p ul {
     counter-reset: compteur;
@@ -557,11 +551,6 @@ body, h1, p {
     margin: 10px 10px 15px 10px;
     padding-left: 0px;
   }
-  body__titre, h1__titre, p__titre {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-  }
   body li, h1 li, p li {
     width: 400px;
     height: 60px;
@@ -574,8 +563,8 @@ body, h1, p {
     background: white;
     -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
             box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 17px;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
+    font-size: 19px;
     font-weight: 600;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -644,7 +633,7 @@ body, h1, p {
     padding: 90px 20px 0px 20px;
   }
   body main h1, h1 main h1, p main h1 {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
     font-size: 28px;
     font-weight: 600;
     position: absolute;
@@ -687,7 +676,7 @@ body, h1, p {
     position: relative;
   }
   body main .carte__titre, h1 main .carte__titre, p main .carte__titre {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
     font-size: 19px;
     font-weight: 600;
     margin-left: 15px;
@@ -770,6 +759,9 @@ body, h1, p {
 }
 
 @media (max-width: 768px) {
+  body, h1, p {
+    /*On donne la hauteur du bloc grace a cette fonctionalité à cause de la position des autres blocs*/
+  }
   body .logo, h1 .logo, p .logo {
     width: 200px;
     height: auto;
@@ -831,40 +823,42 @@ body, h1, p {
     font-size: 17px;
   }
   body .reservation .reservation__titre, body .reservation .reservation__texte, h1 .reservation .reservation__titre, h1 .reservation .reservation__texte, p .reservation .reservation__titre, p .reservation .reservation__texte {
-    margin: 40px auto 10px auto;
-    width: 280px;
+    margin: 40px auto 20px auto;
     text-align: center;
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 17px;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
+    font-size: 21px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 35px;
     font-weight: bold;
   }
   body .reservation .reservation__texte, h1 .reservation .reservation__texte, p .reservation .reservation__texte {
     margin-top: 15px;
-    width: auto;
-    max-width: 90%;
+    max-width: 60%;
     opacity: 0.8;
     line-height: 23px;
     font-weight: normal;
   }
   body .reservation #bouton_resa, h1 .reservation #bouton_resa, p .reservation #bouton_resa {
-    width: 230px;
-    height: 50px;
-    font-size: 17px;
+    width: 280px;
+    height: 70px;
+    font-size: 21px;
     margin: 30px auto 0px auto;
     display: block;
     border-radius: 100px;
     color: white;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border: white;
     -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
             box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
     font-weight: 0.9;
   }
+  body .reservation #bouton_resa:hover, h1 .reservation #bouton_resa:hover, p .reservation #bouton_resa:hover {
+    -webkit-filter: brightness(1.5);
+    filter: brightness(1.5);
+  }
   body form, h1 form, p form {
-    height: 330px;
+    height: 400px;
   }
   body .fonctionnement, h1 .fonctionnement, p .fonctionnement {
     display: -webkit-box;
@@ -896,12 +890,12 @@ body, h1, p {
     margin-top: 90px;
   }
   body .fonctionnement__titre, h1 .fonctionnement__titre, p .fonctionnement__titre {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 17px;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
+    font-size: 21px;
     font-weight: 600;
     position: absolute;
     left: 0px;
-    top: -35px;
+    top: -40px;
   }
   body .fonctionnement li, h1 .fonctionnement li, p .fonctionnement li {
     width: 400px;
@@ -923,8 +917,8 @@ body, h1, p {
             align-items: center;
     -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
             box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 17px;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
+    font-size: 19px;
     font-weight: 600;
     width: 500px;
   }
@@ -949,21 +943,20 @@ body, h1, p {
   }
   body .main-accueil, h1 .main-accueil, p .main-accueil {
     margin-top: 35px;
-    padding-top: 40px;
     background: #f3f7f6;
     height: 1345px;
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
-    padding-top: 110px;
+    padding-top: 130px;
     margin-bottom: -1000px;
   }
   body .main-accueil h1, h1 .main-accueil h1, p .main-accueil h1 {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
-    font-size: 25px;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
+    font-size: 30px;
     font-weight: 600;
     position: absolute;
-    top: 50px;
+    top: 60px;
   }
   body .main-accueil .carte, h1 .main-accueil .carte, p .main-accueil .carte {
     margin-left: auto;
@@ -987,7 +980,7 @@ body, h1, p {
     position: relative;
   }
   body .main-accueil .carte__titre, h1 .main-accueil .carte__titre, p .main-accueil .carte__titre {
-    font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
     font-size: 19px;
     font-weight: 600;
     margin-left: 15px;
