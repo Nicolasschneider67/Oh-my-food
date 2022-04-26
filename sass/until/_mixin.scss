@@ -1,20 +1,3 @@
-$couleur-pr:#9356DC;                                            /*Définition des variables*/
-$couleur-sec: #FF79DA;
-$couleur-ter: #99E2D0;
-$background:  #f3f7f6; 
-$background-foother: rgb(41, 37, 37);                           
-
-$taille-size:(p:17px, icone:19px, logo: 20px, h1:21px, coeur:25px, grand-coeur: 30px);
-$taille-size-t:(p:19px, icone:24px, logo: 25px, h1:28px, coeur:30px);
-
-$interligne:(h1: 35px, p:23px);
-
-
-$ombrage : 1px 2px 10px rgba(182, 176, 176, 0.952);
-
-$marge: 20px;
-$marge-t: 40px;
-
 @mixin logo-bouton($width: 200px, $height: auto, $font-size: 17px, $margin-top: 25px, $margin-right: auto, $margin-bottom: 0px, $margin-left: auto, $border-radius: 100px, $color: white )
 {
     width: $width;
@@ -54,8 +37,14 @@ $marge-t: 40px;
     width: $width;
 }
 
-@mixin hover
+@mixin hover 
 {
-    -webkit-filter: brightness(1.5);
-            filter: brightness(1.5);
+    -webkit-filter: brightness(1.2);
+            filter: brightness(1.2);
+    box-shadow: 3px 3px 10px black;
+}
+
+@mixin hover-couleur
+{
+    background: #dbd7e0;
 }

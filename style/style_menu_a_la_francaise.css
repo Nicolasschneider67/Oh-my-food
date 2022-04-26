@@ -1,0 +1,638 @@
+@charset "UTF-8";
+@font-face {
+  /*Paramètres de la police*/
+  font-family: 'robotoregular';
+  src: url("../police/robotto/roboto-regular-webfont.eot");
+  src: url("../police/robotto/roboto-regular-webfont.eot") format("embedded-opentype"), url("../police/robotto/roboto-regular-webfont.woff2") format("woff2"), url("../police/robotto/roboto-regular-webfont.woff") format("woff"), url("../police/robotto/roboto-regular-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold';
+  src: url("../police/robottobold/roboto-bold-webfont.eot");
+  src: url("../police/robottobold/roboto-bold-webfont.eot") format("embedded-opentype"), url("../police/robottobold/roboto-bold-webfont.woff2") format("woff2"), url("../police/robottobold/roboto-bold-webfont.woff") format("woff"), url("../police/robottobold/roboto-bold-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'shrikhandregular';
+  src: url("../police/srilankaise/shrikhand-regular-webfont.eot");
+  src: url("../police/srilankaise/shrikhand-regular-webfont.eot") format("embedded-opentype"), url("../police/srilankaise/shrikhand-regular-webfont.woff2") format("woff2"), url("../police/srilankaise/shrikhand-regular-webfont.woff") format("woff"), url("../police/srilankaise/shrikhand-regular-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  /*Définition du border-box*/
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body, h1, p {
+  margin: 0px;
+}
+
+/*Définition des paramètres globaux*/
+p, h2, h3 {
+  font-family: 'robotoregular', verdana, arial, helvetica, sans-serif;
+}
+
+@media (min-width: 769px) {
+  p {
+    font-size: 19px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  #bouton_resa {
+    width: 230px;
+    height: 60px;
+    font-size: 18px;
+    margin: 50px auto 0px auto;
+    display: block;
+    border-radius: 100px;
+    color: white;
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border: white;
+    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
+            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
+  }
+}
+
+@media (min-width: 769px) {
+  #bouton_resa {
+    width: 290px;
+    height: 75px;
+    font-size: 30px;
+    margin: 100px auto 0px auto;
+    display: block;
+    border-radius: 100px;
+    color: white;
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border: white;
+    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
+            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
+    position: relative;
+  }
+  #bouton_resa p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: normal;
+            flex-direction: normal;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    margin-top: 50px;
+  }
+  .fa-arrow-left {
+    font-size: 25px;
+    opacity: 0.8;
+    position: absolute;
+    left: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  .logo {
+    width: 220px;
+  }
+  .la-francaise-menu {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: normal;
+            flex-direction: normal;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    margin-top: 20px;
+  }
+  .fa-arrow-left {
+    font-size: 40px;
+    margin: 20px 0px 0px 20px;
+    text-shadow: 3px 1px 3px black;
+    color: black;
+    position: absolute;
+    left: 40px;
+  }
+  .logo {
+    padding-bottom: 25px;
+    width: 400px;
+    height: auto;
+    font-size: 17px;
+    margin: 20px auto 0px auto;
+    display: block;
+    border-radius: 100px;
+    color: white;
+    /*Au vu de la place disponible, on agrandit le logo*/
+  }
+}
+
+@media (min-width: 993px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: normal;
+            flex-direction: normal;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    padding-top: 50px;
+    background: white;
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fa-arrow-left {
+    font-size: 40px;
+    text-shadow: 3px 1px 3px black;
+    color: black;
+    position: relative;
+    left: -280px;
+  }
+  .logo {
+    padding-bottom: 25px;
+    width: 400px;
+    height: auto;
+    font-size: 17px;
+    margin: -50px auto 0px auto;
+    display: block;
+    border-radius: 100px;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .foother {
+    background: #292525;
+    position: relative;
+    /*On précise une marge supplémentaire pour l'alignement*/
+  }
+  .foother__titre {
+    color: white;
+    margin-left: 20px;
+    font-family: 'shrikhandregular';
+    font-size: 19px;
+    padding-top: 25px;
+    margin-bottom: 20px;
+  }
+  .foother__nav {
+    color: white;
+    margin-left: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 160px;
+    padding-bottom: 40px;
+    font-size: 15px;
+  }
+  .foother a {
+    text-decoration: none;
+    color: white;
+  }
+  .foother .fa-utensils {
+    margin-right: 13px;
+  }
+  .foother .fa-handshake-angle {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .foother {
+    background: #292525;
+    padding-left: 40px;
+    position: relative;
+    top: 1150px;
+    /*On précise une marge supplémentaire pour l'alignement*/
+  }
+  .foother__titre {
+    color: white;
+    margin-left: 20px;
+    font-family: 'shrikhandregular';
+    font-size: 24px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  .foother__nav {
+    color: white;
+    margin-left: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 160px;
+    padding-bottom: 30px;
+    font-size: 17px;
+  }
+  .foother a {
+    text-decoration: none;
+    color: white;
+  }
+  .foother .fa-utensils {
+    margin-right: 17px;
+  }
+  .foother .fa-handshake-angle {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 993px) {
+  .foother {
+    background: #292525;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top: 1400px;
+    /*On précise une marge supplémentaire pour l'alignement*/
+  }
+  .foother__titre {
+    color: white;
+    margin-left: 20px;
+    font-family: 'shrikhandregular';
+    font-size: 24px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  .foother__nav {
+    color: white;
+    margin-left: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 160px;
+    padding-bottom: 30px;
+    font-size: 17px;
+  }
+  .foother a {
+    text-decoration: none;
+    color: white;
+  }
+  .foother .fa-utensils {
+    margin-right: 17px;
+  }
+  .foother .fa-handshake-angle {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    /*Il suffit de mettre une position relative, monter la balise et lui accorder un border-radius pour avoir l'effet demandé*/
+    bottom: 60px;
+    background: #f3f7f6;
+    padding-bottom: 100px;
+    margin-bottom: -60px;
+  }
+  .menu__titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu__titre h1 {
+    font-family: 'shrikhandregular', verdana, arial, helvetica, sans-serif;
+    padding-top: 40px;
+    margin-left: 20px;
+    font-size: 2rem;
+  }
+  .menu__titre .fa-heart {
+    font-size: 30px;
+    padding-top: 40px;
+    margin-right: 35px;
+    opacity: 0.8;
+  }
+  .menu .composition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 20px;
+  }
+  .menu .composition__titre {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 200;
+    opacity: 0.7;
+    margin-top: 30px;
+    border-bottom: 4px solid #99E2D0;
+    padding-bottom: 5px;
+    width: 40px;
+  }
+  .menu .cadre {
+    background: white;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
+            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
+    margin: 5px 20px 10px 0px;
+  }
+  .menu .cadre .composition__plat {
+    padding-left: 10px;
+    margin-bottom: -8px;
+    margin-top: 10px;
+  }
+  .menu .cadre .composition__commentaire {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 20px 10px 10px;
+  }
+}
+
+@media (min-width: 480px) {
+  .menu h1 {
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .image-main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-main .la-francaise-menu {
+    width: 100%;
+  }
+  main {
+    margin-top: 0px;
+    /*Le bloc main se supperpose au bloc menu, pour ne pas le voir nous lui definissions des marges à 0 et changeons la couleur de fond*/
+    background: #f3f7f6;
+    position: relative;
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 0px;
+  }
+  .menu {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    position: relative;
+    /*Il suffit de mettre une position relative, monter la balise et lui accorder un border-radius pour avoir l'effet demandé*/
+    bottom: 90px;
+    background: #f3f7f6;
+    padding-top: 10px;
+    padding-bottom: 150px;
+  }
+  .menu h1 {
+    font-family: 'shrikhandregular', verdana, arial, helvetica, sans-serif;
+    padding-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-size: 5vw;
+    /*On diminue la taille du titre ainsi que de l'icone*/
+    /*On utilise cette police pour que le titre s'accorde à la résolution afin que l'écran ne paraisse pas trop vide en grande resolution*/
+    border-bottom: 0px;
+    padding-right: 0px;
+  }
+  .menu .fa-heart {
+    font-size: 4.4vw;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    opacity: 0.8;
+  }
+  article {
+    margin-bottom: 70px;
+  }
+  .composition {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .composition__titre {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 200;
+    opacity: 0.7;
+    margin-left: 20px;
+    border-bottom: 4px solid #99E2D0;
+    padding-bottom: 5px;
+    width: 40px;
+  }
+  .composition .cadre {
+    background: white;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
+            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
+    margin: 5px 20px 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .composition .cadre .composition__plat {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    width: 450px;
+  }
+  .composition .cadre .composition__commentaire {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 40px 10px 0px;
+    width: 100%;
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 993px) {
+  body {
+    background: #292525;
+  }
+  /*Nous donnons une impression de carte de menu en ajoutant un fond sombre*/
+  main {
+    margin-top: 0px;
+    /*Le bloc main se supperpose au bloc menu, pour ne pas le voir nous lui definissions des marges à 0 et changeons la couleur de fond*/
+    background: #f3f7f6;
+    position: relative;
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 0px;
+  }
+  .image-main {
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-main .la-francaise-menu {
+    width: 992px;
+  }
+  .menu {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    position: relative;
+    /*Il suffit de mettre une position relative, monter la balise et lui accorder un border-radius pour avoir l'effet demandé*/
+    top: -130px;
+    background: #f3f7f6;
+    padding-top: 10px;
+    padding-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 992px;
+  }
+  .menu h1 {
+    font-family: 'shrikhandregular', verdana, arial, helvetica, sans-serif;
+    padding-top: 30px;
+    margin-left: 40px;
+    font-size: 50px;
+    /*On diminue la taille du titre ainsi que de l'icone*/
+    /*On utilise cette police pour que le titre s'accorde à la résolution afin que l'écran ne paraisse pas trop vide en grande resolution*/
+    border-bottom: 0px;
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
+  .menu .fa-heart {
+    font-size: 45px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    opacity: 0.8;
+  }
+  article {
+    margin-bottom: 80px;
+  }
+  .composition {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 20px 0px 20px;
+  }
+  .composition__titre {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 200;
+    opacity: 0.7;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-bottom: 4px solid #99E2D0;
+    padding-bottom: 5px;
+    width: 40px;
+  }
+  .composition .cadre {
+    background: white;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
+            box-shadow: 1px 2px 10px rgba(182, 176, 176, 0.952);
+    margin: 10px 20px 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0px 10px 0px;
+  }
+  .composition .cadre .composition__plat {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    width: 500px;
+    font-size: 22px;
+  }
+  .composition .cadre .composition__commentaire {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 40px 10px 0px;
+    width: 100%;
+  }
+  .composition .cadre .composition__prix {
+    font-size: 22px;
+  }
+  .composition .cadre .composition__complémentaire {
+    font-size: 22px;
+    font-weight: 100;
+  }
+}
+/*# sourceMappingURL=style_menu_a_la_francaise.css.map */

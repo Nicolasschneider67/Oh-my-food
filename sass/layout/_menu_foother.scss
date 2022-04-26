@@ -1,0 +1,124 @@
+@media (max-width: 768px)  
+{
+
+    .foother
+    {
+    background: $background-foother; 
+    position: relative;
+   
+
+    &__titre
+    {
+        color: white;
+        margin-left: $marge;
+        font-family: 'shrikhandregular';
+        font-size: map-get($taille-size, icone);
+        padding-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    &__nav
+    {
+        color: white;
+        margin-left: $marge;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: 160px;
+        padding-bottom: 40px;
+        font-size: 15px;
+    }
+
+    a
+    {
+        text-decoration: none;
+        color: white;
+    }
+    .fa-utensils  {margin-right: 13px;}         /*On précise une marge supplémentaire pour l'alignement*/
+    .fa-handshake-angle {margin-right: 6px;}
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px)
+{
+    .foother                            
+    {
+        background: $background-foother;
+        padding-left: $marge-t;
+        position: relative;
+        top: 1150px;
+
+        &__titre
+        {
+            color: white;
+            margin-left: $marge;
+            font-family: 'shrikhandregular';
+            font-size: map-get($taille-size-t, icone);
+            padding-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        &__nav
+        {
+            color: white;
+            margin-left: $marge;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            height: 160px;
+            padding-bottom: 30px;
+            font-size: 17px;
+        }
+        
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+
+        .fa-utensils  {margin-right: 17px;}         /*On précise une marge supplémentaire pour l'alignement*/
+        .fa-handshake-angle {margin-right: 10px;}
+    }
+}
+
+@media (min-width: 993px)                          /*Comme l'écran est plus large nous centrons le foother*/
+{
+    .foother                           
+    {
+        background: $background-foother; 
+        @include centrer (column, center);
+        position: relative;
+        top: 1400px;
+
+        &__titre
+        {
+            color: white;
+            margin-left: $marge;
+            font-family: 'shrikhandregular';
+            font-size: map-get($taille-size-t, icone);
+            padding-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        &__nav
+        {
+            color: white;
+            margin-left: $marge;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            height: 160px;
+            padding-bottom: 30px;
+            font-size: 17px;
+        }
+        
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+
+        .fa-utensils  {margin-right: 17px;}         /*On précise une marge supplémentaire pour l'alignement*/
+        .fa-handshake-angle {margin-right: 10px;}
+    }
+}

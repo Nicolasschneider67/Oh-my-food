@@ -1,0 +1,31 @@
+@media (max-width: 768px) 
+{
+    #bouton_resa
+        {
+            @include logo-bouton(280px, 70px, 21px, 30px);
+            background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
+            border: white;
+            box-shadow: $ombrage;
+            font-weight: 0.9;
+
+            &:hover{@include hover;}
+        }
+}
+
+@media (min-width: 769px)
+{
+    #bouton_resa
+    {
+        @include logo-bouton(280px, 70px, 19px);
+        background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
+        border: white;
+        box-shadow: $ombrage;
+        font-weight: 0.9;
+        padding-top: 18px;
+        padding-bottom: 20px;
+        position: absolute;                                                 /*on joue sur la position pour qu'il reste en bas du cadre et centré*/
+        bottom: 20px;    
+        left: 5%;
+        right: 5%; 
+    }
+}
