@@ -10,7 +10,10 @@
     </head>
 
 
-  <body>
+  <body> 
+    <i class="fa-solid fa-burger"></i>                                          <!--loader spinner-->
+    <section class="spinner">
+
       <header>
         <div><img src="../images/logo.png" class="logo" alt="logo du site"></div>
       </header>
@@ -46,14 +49,15 @@
         <div class="rang-1">                                                    <!--On créer des rangs pour un meilleur responsive en tablette et +-->
           <div class="carte">
             <h1>Restaurants</h1>                                                <!--On rajoute le titre dans la classe carte pour que le titre suive correctement en responsive-->
-            <div class="carte__image"><img src="../images/la-palette.jpg" class="la-palette" alt="image restaurant la palette du goût"></div>
+            <a href="index_menu_a_la_francaise.html"><div class="carte__image"><img src="../images/la-palette.jpg" class="la-palette" alt="image restaurant la palette du goût"></div>
               <div class="carte__contenu">
                 <p class="carte__titre">La palette du goût</p>
                 <p class="carte__adresse">Ménilmontant</p>
                 <i class="fa-regular fa-heart"></i>
                 <p class="carte__nouveau">Nouveau</p>
-              </div>
-          </div>   
+              </div></a>
+          </div> 
+
           
           <div class="carte carte--2">
             <div class="carte__image"><img src="../images/note-enchantee.jpg" class="note-enchantee" alt="image restaurant la note enchantée"></div>
@@ -68,10 +72,10 @@
 
         <div class="rang-2">
           <div class="carte carte--3">
-            <div class="carte__image"><img src="../images/a-la-francaise.jpg" class="la-francaise" alt="image restaurant à la française"></div>
+            <a href="index_menu_a_la_francaise.html"><div class="carte__image"><img src="../images/a-la-francaise.jpg" class="la-francaise" alt="image restaurant à la française"></div>
               <div class="carte__contenu">
                 <p class="carte__titre">À la française</p>
-                <p class="carte__adresse">Cité Rouge</p>
+                <p class="carte__adresse">Cité Rouge</p></a>
                 <i class="fa-regular fa-heart"></i>
               </div>
           </div> 
@@ -87,6 +91,8 @@
         </div>   
       </main>
 
+
+
       <foother>
         <div class="foother">
           <div class="foother__titre">ohmyfood</div>
@@ -100,6 +106,6 @@
         
       </foother>
 
-    
+    </section>
   </body>
 </html>

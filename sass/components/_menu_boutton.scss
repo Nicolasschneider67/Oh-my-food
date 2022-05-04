@@ -2,10 +2,12 @@
 {             
         #bouton_resa
         {
-            @include logo-bouton(230px, 60px, 18px, 50px);
+            @include logo-bouton(230px, 60px, 18px, 50px,);
             background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
             border: white;
             box-shadow: $ombrage;  
+
+            &:hover{@include hover;}
         } 
 }
 
@@ -13,12 +15,13 @@
 {
         #bouton_resa
         {
-            @include logo-bouton(290px, 75px, 30px, 100px);
+            @include logo-bouton(290px, 75px, 30px, 10px);
             background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
             border: white;
             box-shadow: $ombrage;  
             position: relative;
             
+            &:hover{@include hover;}
             p{font-size: map-get($taille-size-t,icone)}
         }
 }

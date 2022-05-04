@@ -1,4 +1,4 @@
-@media (max-width: 768px)                               /*Notre code pour mobile se fera sur ce fichier*/
+@media (max-width: 768px)                             
 {     
     
     .reservation                                            /*Réservation avec formulaire*/
@@ -49,7 +49,7 @@
             {
                 @extend.reservation__titre;
                 margin-top: 15px;
-                max-width: 60%;
+                max-width: 450px;
                 opacity: 0.8;
                 line-height: map-get($interligne,p);
                 font-weight: normal;
@@ -95,13 +95,13 @@
             background: $background; 
             align-items: center;
             box-shadow: $ombrage;
-            @include titre (map-get($taille-size, icone));
+            @include titre (18px);
             width: 500px;
 
             &:hover
             {
                 @include hover-couleur;
-                .icone-fonctionnement {color: $couleur-pr}
+                .icone-fonctionnement {color: $couleur-pr; opacity: 1;}
             }
         }
 
@@ -127,18 +127,18 @@
     {                        
         margin-top: 35px;
         background: $background;
-        height: 1345px;
+        height: 1335px;
         padding-left: $marge;
         padding-right: $marge;
         position: relative;
-        padding-top: 130px;
+        padding-top: 110px;
         margin-bottom: -1000px;
         
         h1
         {   
             @include titre(30px);
             position: absolute;
-            top: 60px;
+            top: 50px;
         }
 
         .carte
@@ -165,10 +165,15 @@
             &__titre
             {
                 @include titre(19px);
-                margin-left: 15px;      
+                margin-left: 15px; 
+                color: black;     
             }
 
-            &__adresse{margin-left: 15px;}
+            &__adresse
+            {
+                margin-left: 15px;
+                color: black;
+            }
 
             .fa-heart
             {
@@ -178,7 +183,23 @@
                 top: 8px;
                 right: 20px;
                 margin-bottom: 0px;
+                color: black;
+
+                &:hover
+                {
+                    &::after
+                    {
+                        opacity: 1;
+                    }
+                }
+                &::after
+                    {
+                       @include animation-coeur;
+                    }
+        
             }
+
+            a {text-decoration: none;}
 
             &__nouveau
             {
@@ -283,6 +304,12 @@
             max-width: 90%;
             position: relative; 
             padding-left: 20px;
+
+            &:hover
+            {
+                @include hover-couleur;
+                .icone-fonctionnement {color: $couleur-pr; opacity: 1;}
+            }
         }
 
         li::before
@@ -368,10 +395,15 @@
             &__titre
             {
                 @include titre(19px);
-                margin-left: 15px;      
+                margin-left: 15px;  
+                color: black;    
             }
 
-            &__adresse{margin-left: 15px;}
+            &__adresse
+            {
+                margin-left: 15px;
+                color: black;
+            }
 
             .fa-heart
             {
@@ -381,7 +413,23 @@
                 top: 8px;
                 right: 20px;
                 margin-bottom: 0px;
+                color: black;
+
+                &:hover
+                {
+                    &::after
+                    {
+                        opacity: 1;
+                    
+                    }
+                }
+                &::after
+                    {
+                        @include animation-coeur;
+                    }
             }
+
+            a {text-decoration: none;}
 
             &__nouveau
             {
@@ -490,6 +538,12 @@
             max-width: 90%;
             position: relative; 
             padding-left: 20px;
+
+            &:hover
+            {
+                @include hover-couleur;
+                .icone-fonctionnement {color: $couleur-pr; opacity: 1;}
+            }
         }
 
         li::before
@@ -551,6 +605,7 @@
             border-radius: 20px;
             height: 280px;
             margin: 0px 20px 30px 20px;
+            
 
         .la-palette, .note-enchantee, .la-francaise, .delice-des-sens
             {
@@ -567,10 +622,17 @@
             &__titre
             {
                 @include titre(19px);
-                margin-left: 15px;      
+                margin-left: 15px;   
+                color: black;   
             }
 
-            &__adresse{margin-left: 15px;}
+            &__adresse
+            {
+                margin-left: 15px;
+                color: black;
+            }
+
+            a {text-decoration: none;}
 
             .fa-heart
             {
@@ -580,7 +642,24 @@
                 top: 8px;
                 right: 20px;
                 margin-bottom: 0px;
+                color: black;
+                z-index: 1;
+
+                &:hover
+                {
+                    &::after
+                    {
+                        opacity: 1;
+                        
+                    }
+                }
+                &::after
+                    {
+                        @include animation-coeur
+                    }
+
             }
+
 
             &__nouveau
             {

@@ -1,0 +1,212 @@
+.spinner                                                        /*Nous créons un body avec une opacité de 0 pour simuler une connexion lente*/
+{
+  -webkit-animation: body 3s;                                   /*Nous n'utilisons pas de classe directement sur body sinon l'opacité s'applique au logo*/
+          animation: body 3s forwards;
+          opacity: 0;
+}
+
+@-webkit-keyframes body
+{
+    0%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes body
+{
+    0%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.fa-burger
+{
+    transform: rotateY(0deg);
+            -webkit-animation: fa-burger;
+                    animation: fa-burger 3s linear forwards;
+                    color: black;
+                    font-size: 100px;
+                    position: absolute;
+                    
+                    top: 40%;
+                    z-index: 900;
+                    opacity: 1;
+                    background: $couleur-ter;
+                    border-radius: 50%;
+                    padding: 60px;
+
+}
+
+
+
+@-webkit-keyframes fa-burger 
+{
+    0%{
+        transform: rotateY(0deg);
+        
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(1turn);
+        opacity: 0;
+        
+    }
+}
+
+
+
+@keyframes fa-burger 
+{
+    0%{
+        transform: rotateY(0deg);
+        color: $couleur-sec;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotateY(1turn);
+        opacity: 0;
+        color: $couleur-pr;
+    }
+}
+
+
+.composition                                /*animation de l'entrée*/
+{
+    -webkit-animation: entree 3s;
+            animation: entree 3s;
+}
+
+@-webkit-keyframes entree
+{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translatY(0);
+        opacity: 1;
+        -webkit-animation-timing-function: cubic-bezier(0,.97,.72,.95);
+                animation-timing-function: cubic-bezier(0,.97,.72,.95);
+    }
+}
+
+
+
+@keyframes entree
+{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translatY(0);
+        opacity: 1;
+        -webkit-animation-timing-function: cubic-bezier(0,.97,.72,.95);
+                animation-timing-function: cubic-bezier(0,1.44,.72,.95);
+    }
+}
+
+
+.composition--plat                          /*animation des plats*/
+{
+    -webkit-animation: plat 3s 5s;
+            animation: plat 3s 5s forwards;
+            opacity: 0;
+}
+
+@-webkit-keyframes plat
+{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translatY(0);
+        opacity: 1;
+        -webkit-animation-timing-function: cubic-bezier(0,.97,.72,.95);
+                animation-timing-function: cubic-bezier(0,1.44,.72,.95);
+    }
+}
+
+@keyframes plat
+{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translatY(0);
+        opacity: 1;
+        -webkit-animation-timing-function: cubic-bezier(0,.97,.72,.95);
+                animation-timing-function: cubic-bezier(0,1.44,.72,.95);
+    }
+}
+
+
+.composition--dessert                   /*animation des desserts*/
+{
+    -webkit-animation: dessert 3s 10s;
+            animation: dessert 3s 10s forwards;
+            opacity: 0;
+}
+
+@-webkit-keyframes dessert
+{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translatY(0);
+        opacity: 1;
+        -webkit-animation-timing-function: cubic-bezier(0,.97,.72,.95);
+                animation-timing-function: cubic-bezier(0,1.44,.72,.95);
+    }
+}
+
+@keyframes dessert
+{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        transform: translatY(0);
+        opacity: 1;
+        -webkit-animation-timing-function: cubic-bezier(0,.97,.72,.95);
+                animation-timing-function: cubic-bezier(0,1.44,.72,.95);
+    }
+}
