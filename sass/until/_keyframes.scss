@@ -31,16 +31,37 @@
     }
 }
 
-
-.fa-burger
+@media (max-width: 900px)                                         /*Nous sommes obligé de réaliser un media sinon le logo ne sera pas centré en fonction de la résolution*/
 {
+    .fa-burger
+    {
     transform: rotateY(0deg);
             -webkit-animation: fa-burger;
                     animation: fa-burger 3s linear forwards;
                     color: black;
                     font-size: 100px;
                     position: absolute;
-                    
+                    left: 36%;
+                    top: 10%;
+                    z-index: 900;
+                    opacity: 1;
+                    background: $couleur-ter;
+                    border-radius: 50%;
+                    padding: 60px;
+    }
+}
+
+@media (min-width:900px)
+{
+    .fa-burger
+    {
+    transform: rotateY(0deg);
+            -webkit-animation: fa-burger;
+                    animation: fa-burger 3s linear forwards;
+                    color: black;
+                    font-size: 100px;
+                    position: absolute;
+                    left: 40%;
                     top: 40%;
                     z-index: 900;
                     opacity: 1;
@@ -48,26 +69,26 @@
                     border-radius: 50%;
                     padding: 60px;
 
-}
+    }
 
+}
 
 
 @-webkit-keyframes fa-burger 
 {
     0%{
         transform: rotateY(0deg);
-        
+        color: $couleur-sec;
     }
     99%{
         opacity: 1;
     }
     100%{
-        transform: rotate(1turn);
+        transform: rotateY(1turn);
         opacity: 0;
-        
+        color: $couleur-pr;
     }
 }
-
 
 
 @keyframes fa-burger 
@@ -93,7 +114,7 @@
             animation: entree 3s;
 }
 
-@-webkit-keyframes entree
+-webkit-keyframes entree
 {
     0%{
         transform: translateY(100px);
@@ -110,7 +131,7 @@
 
 
 
-@keyframes entree
+keyframes entree
 {
     0%{
         transform: translateY(100px);
@@ -128,7 +149,7 @@
 }
 
 
-.composition--plat                          /*animation des plats*/
+composition--plat                          /*animation des plats*/
 {
     -webkit-animation: plat 3s 5s;
             animation: plat 3s 5s forwards;

@@ -66,19 +66,11 @@
     z-index: 2;            
 }
 
-@mixin check
+
+@mixin rognement ($width: 0px)      /*Utilisée pour rogner le texte lors de la selection d'un plat*/
 {
-    content: "\f058";
-    font-family: fontawesome;
-    font-size: 40px;
-    position: relative;
-    right: 0px;
-    background: $couleur-ter;
-    color: white;
-    margin: -10px -2px -10px 0px;
-    width: 120px;
-    height: 70px;
-    border-radius: 0px 15px 15px 0px;
-    @include centrer (center, center);
-    transition: rotate(1turn) 2s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: $width;
+    overflow: hidden;      
 }

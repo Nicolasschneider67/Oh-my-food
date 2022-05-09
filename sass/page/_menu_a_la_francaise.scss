@@ -56,8 +56,8 @@
             &__titre                    /*On adopte une taille de polcie et de bordure en vw pour s'adapter à la résolution*/
             {
                 text-transform: uppercase;
-                font-size: map-get($taille-size, p);
-                font-weight: 200;
+                font-size: 18px;
+                font-weight: 500;
                 opacity: 0.7;
                 margin-top: 30px;
                 @include souligner (4px solid $couleur-ter, 5px, 40px);
@@ -67,32 +67,110 @@
         .cadre                          /*On ne fait pas de nesting car la lecture deviendrait trop complexe*/
             {
                 background: white;
+                position: relative;
                 border-radius: 15px;
                 box-shadow: $ombrage;
                 margin: 5px $marge 10px 0px;
+                height: 70px;
+                overflow: hidden;
+                cursor: url(../images/souris.png), pointer;
+                
+                &:hover                             /*Nous sommes obligé de faire 2 animations distinctes sinon le cadre tourne avec*/
+                {
+                    &::before
+                    {
+                        transform: translateX(-20px) rotate(1turn);             /*Pour réussir l'animation nous plaçons le prix en absolute et imposons une marge au texte qui compose le cadre*/
+                    }
+                    &::after
+                    {
+                        transform: translateX(0);
+                    }
+                    .composition__prix                      
+                    {   
+                        right: $marge + 70px;  
+                    }
+                    .composition__plat, .composition__complémentaire
+                    {
+                        padding-right: 130px;
+                    }
+                }
+                &::before
+                {
+                    content: "\f058";
+                    font-family: fontawesome;
+                    font-size: 30px;
+                    position: absolute;
+                    right: 0px;
+                    top: 20px;
+                    color: white;
+                    transform: translateX(200%) rotate(0deg); 
+                    transition: all 0.8s;
+                    z-index: 9;
+                }
+                &::after                 
+                {    
+                    content:"";
+                    position: absolute;
+                    display: block;
+                    width: 70px;
+                    height: 70px;                           
+                    background: $couleur-ter;
+                    right: 0%;
+                    top: 0;
+                    border-radius: 0px 15px 15px 0px;
+                    transform: translateX(200%); 
+                    transition: all 0.8s;
+                    z-index: 8;    
+                }      
+
 
                .composition__plat 
                {
                    padding-left: 10px;
                    margin-bottom: -8px;
-                   margin-top: 10px;  
+                   margin-top: 10px; 
+                   position: relative;
+                   @include rognement (100%);
+                   padding-right: 60px;
+                   transition: 0.8s;
                }
 
-               .composition__commentaire
+                .composition__complémentaire
                 {
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 10px 20px 10px 10px;
+                    
+                    padding: 10px 60px 10px 10px;
+                    position: relative;
+                    @include rognement (100%);
+                    transition: 0.8s;
+                }
+
+                .composition__prix 
+                {
+                   position: absolute;
+                   bottom: 10px;
+                   right: $marge;
+                   transition: 0.8s;
                 }
             }
     }    
 }
    
 
-@media (min-width: 480px)                               /*On rajoute cette media pour que le titre reste en accord avec la maquette mais pour que l'espace dans le menu ne soit pas trop vide*/
+@media (min-width: 480px) and (max-width: 768px)                          /*On rajoute cette media pour que le titre reste en accord avec la maquette mais pour que l'espace dans le cadre ne soit pas trop vide*/
 {
-    .menu h1 {font-size: 6vw};
-}  
+    .menu h1 {font-size: 6.5vw};
+                                                    /*Permet de mieux remplir le cadre en responsiv tout en respectant le design de la maquette*/
+    .composition__prix, .composition__plat, .composition__complémentaire, .composition__titre{font-size: 1.2em !important;}
+
+    .fa-heart {position: absolute; right: 0px;}
+
+    &::after {right: 0px !important}
+
+    .cadre:hover::after {width: 100px;}          /*Nous aumentons la taille du cadre en bleu et ajustons les marges des éléments associés*/
+    .cadre:hover::before {font-size: 45px; top: 15px; right: 1.5%;}
+    .cadre:hover .composition__prix {right: 100px + $marge !important;}
+    .cadre:hover .composition__complémentaire {padding-right: 160px !important;}
+}           
 
 
 @media (min-width: 769px) and (max-width: 992px)      
@@ -187,24 +265,79 @@
                 border-radius: 15px;
                 box-shadow: $ombrage;
                 margin: 5px $marge 20px $marge;
+                padding-left: $marge;
+                padding-right: $marge;
                 display: flex;
+                position: relative;
+                width: 96%;
+                cursor: url(../images/souris.png), pointer;
+                overflow: hidden;
+                
+                &:hover                             /*Nous sommes obligé de faire 2 animations distinctes sinon le cadre tourne avec*/
+                {
+                    &::before
+                    {
+                        transform: translateX(-160%) rotate(1turn);
+                    }
+                    &::after
+                    {
+                        transform: translateX(0);
+                    }
+                    .composition__prix                      
+                    {
+                        margin-right: 100px;
+                        margin-left: $marge;
+                    }
+                }
+
+                &::before                       /*Nous adaptons la taille du bloc bleu ainsi que la position du logo en fonction de la taille du cadre*/
+                {
+                content: "\f058";
+                font-family: fontawesome;
+                font-size: 30px;
+                position: absolute;
+                right: -10px;
+                top: 5px;
+                color: white;
+                transform: translateX(200%) rotate(0deg); 
+                transition: all 0.8s;
+                z-index: 9;
+                }
+                
+                &::after                
+                {   
+                    content:"";
+                    position: absolute;
+                    width: 100px;
+                    height: 40px;
+                    background: $couleur-ter;
+                    right: 0px;
+                    border-radius: 0px 15px 15px 0px;
+                    transform: translateX(200%); 
+                    transition: all 0.8s;
+                    z-index: 8;
+                }
 
                 .composition__plat 
                {
-                   padding-left: $marge;
-                   padding-right: 20px;
-                   margin-bottom: 0px;
-                   margin-top: 10px;
-                   width: 450px;  
+                   min-width: 40%;                  /*On applique des pourcentages pour que le cadre ne bouge pas lors de l'animation et nous permet une bonne répartition du texte dans le cadre*/
+                   white-space: nowrap;
+                   margin: 7px 0px 7px 0px;
+                   font-size: map-get($taille-size-t, p);
                }
                
-                .composition__commentaire
+                .composition__complémentaire
                 {
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 10px 40px 10px 0px;
-                    width: 100%;
+                    margin-top: 7px;
+                    @include rognement (490px);
+                    font-size: map-get($taille-size-t, p);               
+                }
+
+                .composition__prix 
+                {
+                    padding-top: 7px;
                     font-size: map-get($taille-size-t, p);
+                    transition: 0.8s;
                 }
             }
         }      
@@ -289,7 +422,7 @@
         flex-direction: column;
         margin: 0px $marge 0px $marge;
         width: 100%;                                            /*Nous permet de mettre l'animation de côté sans que cela se voit*/
-        overflow: hidden;
+        
 
         &__titre                    /*On adopte une taille de polcie et de bordure en vw pour s'adapter à la résolution*/
         {
@@ -308,12 +441,13 @@
             background: white;
             border-radius: 15px;
             box-shadow: $ombrage;
-            margin: 10px $marge 20px $marge;
+            margin: 10px $marge-t 20px $marge;
             display: flex;
             padding: 10px 0px 10px 0px;
             position: relative;
             cursor: url(../images/souris.png), pointer;
-            
+            width: 96%;                                             /*Nous devons appliquer un width ainsi qu'un overflow pour que l'animation sorte du cadre et non pas du menu*/
+            overflow: hidden;
 
             &:hover                             /*Nous sommes obligé de faire 2 animations distinctes sinon le cadre tourne avec*/
             {
@@ -324,9 +458,14 @@
                 &::after
                 {
                     transform: translateX(0);
-                    margin-left: 100px;
+                }
+
+                .composition__prix                      /*Pour que le texte se décale nous créons unne marge en hover avec un effet ed transition sur la classe*/
+                {
+                    margin-right: 130px;
                 }
             }
+
             &::before
             {
                 content: "\f058";
@@ -334,50 +473,53 @@
                 font-size: 50px;
                 position: absolute;
                 right: 0px;
+                top: 7px;
                 color: white;
                 transform: translateX(200%) rotate(0deg); 
-                transition: all 2s;
-                z-index: 10;
+                transition: all 0.8s;
+                z-index: 9;
             }
             &::after
             {   
                     content:"";
-                    position: relative;
+                    position: absolute;
+                    width: 110px;
                     background: $couleur-ter;
-                    color: white;
-                    margin: -10px -2px -10px 0px;
-                    width: 210px;
-                    height: 70px;
+                    margin-top: -10px;
+                    margin-bottom: -10px;
+                    right: 0px;
+                    height: 63px;
                     border-radius: 0px 15px 15px 0px;
                     transform: translateX(200%); 
-                    transition: all 2s;
+                    transition: all 0.8s;
+                    z-index: 8;
             }
-           
+
+            
            .composition__plat 
            {
                padding-left: $marge;
-               padding-right: 20px;
-               margin-bottom: 0px;
-               margin-top: 10px;
-               width: 600px;  
+               margin: 7px 100px 7px 0px;
+               width: 300px;                            /*On accorde une taille suffisante pour que les complémentaires soient alignés, ensuite on peut voir pour une marge supplémentaire*/
+               min-width: 300px; 
                font-size: 22px;
+               white-space: nowrap;
            }
-           
-            .composition__commentaire
-            {
-                display: flex;
-                justify-content: space-between;
-                padding: 10px 10px 10px 0px;
-                margin-right: -90px;
-                width: 800px;
-            }
-
-            .composition__prix {font-size: 22px;}
 
             .composition__complémentaire  
             {
                 font-size: 22px;
                 font-weight: 100;
+                margin-top: 7px;
+                margin-right: 30px;
+                @include rognement (430px);
+            }
+
+            .composition__prix 
+            {
+                font-size: 22px;
+                padding-top: 7px;
+                transition: 0.8s;
             }
         }
         
