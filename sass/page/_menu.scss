@@ -1,15 +1,24 @@
 @media (max-width: 768px)  
-{
+{    
+    .la-francaise-menu
+    {
+        width: 100%;
+        margin-top: 15px;
+        height: 320px;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+
     .menu
     {
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         position: relative;                             /*Il suffit de mettre une position relative, monter la balise et lui accorder un border-radius pour avoir l'effet demandé*/
-        bottom: 60px;
+        bottom: 40px;
         background: $background;
         padding-bottom: 100px;
         margin-bottom: -60px;
-
+        
         &__titre
         {
             display: flex;
@@ -20,7 +29,8 @@
                 font-family: 'shrikhandregular', verdana, arial, helvetica, sans-serif;     
                 padding-top: 40px;
                 margin-left: $marge;
-                font-size: 2rem;                            
+                font-size: 2rem;   
+                margin-right: 30px;                         
             }
         
 
@@ -180,9 +190,12 @@
     width: 100%;
     @include marge-auto;
 
-        .la-francaise-menu
+        .la-francaise-menu, .menu_enchante                                      
         {
             width: 100%;
+            height: 500px;
+        -o-object-fit: cover;
+           object-fit: cover;
         }
     }
 
@@ -322,7 +335,7 @@
                {
                    min-width: 40%;                  /*On applique des pourcentages pour que le cadre ne bouge pas lors de l'animation et nous permet une bonne répartition du texte dans le cadre*/
                    white-space: nowrap;
-                   margin: 7px 0px 7px 0px;
+                   margin: 7px 40px 7px 0px;
                    font-size: map-get($taille-size-t, p);
                }
                
@@ -357,15 +370,18 @@
     height: 0px;
     }
 
-    .image-main                                        /*On définit une taille unique pour l'image qu'on centre*/    
+    .image-main, .menu_enchante                                         /*On définit une taille unique pour l'image qu'on centre*/    
     {
     width: 992px;
     @include marge-auto;
 
-    .la-francaise-menu
-    {
+        .la-francaise-menu
+        {
         width: 992px;
-    }
+        height: 550px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        }
     }
 
     .menu
@@ -427,7 +443,7 @@
         &__titre                    /*On adopte une taille de polcie et de bordure en vw pour s'adapter à la résolution*/
         {
             text-transform: uppercase;
-            font-size: 26px;
+            font-size: map-get($taille-size-t, icone);
             font-weight: 200;
             opacity: 0.7;
             margin-left: $marge;
@@ -499,16 +515,16 @@
            .composition__plat 
            {
                padding-left: $marge;
-               margin: 7px 100px 7px 0px;
+               margin: 7px 75px 7px 0px;
                width: 300px;                            /*On accorde une taille suffisante pour que les complémentaires soient alignés, ensuite on peut voir pour une marge supplémentaire*/
                min-width: 300px; 
-               font-size: 22px;
+               font-size: map-get($taille-size-t,p);
                white-space: nowrap;
            }
 
             .composition__complémentaire  
             {
-                font-size: 22px;
+                font-size: map-get($taille-size-t,p);
                 font-weight: 100;
                 margin-top: 7px;
                 margin-right: 30px;
@@ -517,7 +533,7 @@
 
             .composition__prix 
             {
-                font-size: 22px;
+                font-size: map-get($taille-size-t,p);
                 padding-top: 7px;
                 transition: 0.8s;
             }

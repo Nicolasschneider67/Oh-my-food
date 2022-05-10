@@ -30,7 +30,8 @@
     .header
     {
     @include centrer; 
-    margin-top: 20px;                                
+    margin-top: 20px;  
+    margin-bottom: 10px;                              
     }
 
     .fa-arrow-left                                     
@@ -60,6 +61,7 @@
     background: white;
     width: 992px;
     @include marge-auto;
+    padding-bottom: 30px;
     
     }
 

@@ -1,7 +1,6 @@
 @media (max-width: 768px)                             
 {     
-    
-    .reservation                                            /*Réservation avec formulaire*/
+      .reservation                                            /*Réservation avec formulaire*/
     {
         @include centrer;
         flex-direction: column;
@@ -58,11 +57,12 @@
     
     .fonctionnement                        
     {
-        @include centrer(column, center);
-        margin-left: $marge;
-        margin-right: $marge;
-        max-width: 100%;
-        
+        @include marge-auto;
+        padding-left: $marge;
+        padding-right: $marge;
+        max-width: 513px;
+        margin-top: 50px;
+        position: relative;
         
         ul
         {
@@ -74,15 +74,12 @@
             text-align: center;
             max-width: 100%;
             position: relative;
-            margin-top: 90px;
+            margin-top: 30px;
         }
 
         &__titre 
         { 
-            @include titre (map-get($taille-size,h1)); 
-            position: absolute;
-            left: 0px;
-            top: -40px;
+            @include titre (map-get($taille-size-t,icone)); 
         }
 
         li                                                              /*Affichage de la puce + le cadre*/
@@ -125,7 +122,7 @@
 
     .main-accueil 
     {                        
-        margin-top: 35px;
+        margin-top: 80px;
         background: $background;
         height: 1335px;
         padding-left: $marge;
@@ -136,7 +133,7 @@
         
         h1
         {   
-            @include titre(30px);
+            @include titre(24px);
             position: absolute;
             top: 50px;
         }
@@ -146,7 +143,7 @@
             @include marge-auto;
             margin-bottom: 20px;
             box-shadow: $ombrage;
-            border-radius: 20px;
+            border-radius: 25px;
             height: 275px;
             max-width: 500px;
             
@@ -205,12 +202,12 @@
             {
                 position: absolute;
                 background: $couleur-ter;
-                border-radius: 1px;
+                border-radius: 5px;
                 top: -200px;
                 right: 15px;
                 width: 95px;
                 height: 30px;
-                @include centrer(center, center);
+                @include centrer(row, center);
                 color:hsl(160, 86%, 22%);
                 font-weight: bold;
                 font-size: 16px;
@@ -224,6 +221,20 @@
 
 @media (min-width: 769px) and (max-width: 992px)           /*Partie tablette*/
 {
+    .spinner                                                 
+{
+    -webkit-animation: body 3s;                                   
+    animation: body 3s 3s forwards;
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    z-index: 900;
+    opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(1,.44,.61,1.01);
+            animation-timing-function: cubic-bezier(.6,.38,.88,.66);
+}
+
     .reservation__barre-recherche
     {
         font-size: map-get($taille-size-t,logo);
@@ -282,6 +293,12 @@
         padding-top: 10px;
     }
 
+    .fonctionnement__titre 
+    {
+        font-size: map-get($taille-size-t, h1);
+        @include centrer;
+    }
+
     ul
         {
             counter-reset: compteur;
@@ -291,11 +308,6 @@
             @include centrer(column,center);
             margin: 10px 10px 15px 10px;
             padding-left: 0px;
-
-            .fonctionnement__titre 
-            {
-                font-size: map-get($taille-size-t, icone);
-            }
         }
 
 
@@ -306,7 +318,7 @@
             background: white; 
             box-shadow: $ombrage;
             @include titre(map-get($taille-size-t,p));
-            @include centrer(center, center);
+            @include centrer(row, center);
             width: 370px;
             max-width: 90%;
             position: relative; 
@@ -327,7 +339,7 @@
             position: absolute;
             left: -19px;
             top: 13px;
-            @include centrer(normal, center);
+            @include centrer (row, center);
             width: 35px;
             height: 35px;
             margin-right: 10px;
@@ -345,7 +357,7 @@
         
         .main-accueil
         {
-            padding-top: 100px;
+           
             margin-bottom: 0px;
         }
 
@@ -448,7 +460,7 @@
                 right: 15px;
                 width: 105px;
                 height: 30px;
-                @include centrer(center, center);
+                @include centrer(row, center);
                 color:hsl(160, 86%, 22%);
                 font-weight: bold;
                 padding: 20px;
@@ -458,8 +470,9 @@
        
 }
 
-@media (min-width: 993px)                                                 
+@media (min-width: 993px)         
 {
+
     .reservation__barre-recherche
     {
         font-size: map-get($taille-size-t,logo);
@@ -524,6 +537,12 @@
         @include titre (map-get($taille-size,h1));
     }
 
+    .fonctionnement__titre 
+    {
+        @include centrer;
+        font-size: map-get($taille-size-t, h1);
+    }
+
     ul
         {
             counter-reset: compteur;
@@ -547,7 +566,7 @@
             background: white; 
             box-shadow: $ombrage;
             @include titre(map-get($taille-size-t,p));
-            @include centrer(center, center);
+            @include centrer(row, center);
             width: 370px;
             max-width: 90%;
             position: relative; 
@@ -568,7 +587,7 @@
             position: absolute;
             left: -19px;
             top: 13px;
-            @include centrer(normal, center);
+            @include centrer(row, center);
             width: 35px;
             height: 35px;
         }
@@ -586,7 +605,12 @@
         .main-accueil
         {
             padding-top: 100px;
+            padding-bottom: 40px;
             background: $background;
+            width: 100%;
+            margin-left: 5%;
+            margin-right: 5%;
+            border-radius: 10px;
         }
 
         main                                                /*Partie repas*/
@@ -594,14 +618,15 @@
         margin-top: 445px;
         background: $background-foother;
         position: relative;
-        padding: 90px $marge-t 50px $marge-t;
+        padding: 50px 0px 30px 0px;
+        @include centrer;
         
         h1
         {   
             @include titre(map-get($taille-size-t,h1));
             position: absolute;
-            top: 20px;
-            padding-right: 785px;
+            top: 70px;
+            padding-right: 60%;
             padding-bottom: 2px;
             border-bottom: 10px solid $couleur-pr;
             border-bottom-style: double;
@@ -611,6 +636,8 @@
         {
             display: flex;
             @include centrer;
+            margin-left: 5%;
+            margin-right: 5%;
         }
 
         .carte
@@ -623,7 +650,8 @@
 
         .la-palette, .note-enchantee, .la-francaise, .delice-des-sens
             {
-                width: 450px;
+                width: 650px;
+                max-width: 100%;
                 height: 200px;
                 -o-object-fit: cover;
                    object-fit: cover;
@@ -684,10 +712,11 @@
                 right: 15px;
                 width: 105px;
                 height: 30px;
-                @include centrer(center, center);
+                @include centrer(row, center);
                 color:hsl(160, 86%, 22%);
                 font-weight: bold;
             }
         }
     }       
 }
+

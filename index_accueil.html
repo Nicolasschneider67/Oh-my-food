@@ -11,8 +11,8 @@
 
 
   <body> 
-    <i class="fa-solid fa-burger"></i>                                          <!--loader spinner-->
-    <section class="spinner">
+    <span class="spinner"></span>                                        <!--loader spinner-->
+      <i class="fa-solid fa-burger"></i>
 
       <header>
         <div><img src="../images/logo.png" class="logo" alt="logo du site"></div>
@@ -28,84 +28,90 @@
           <div class="reservation__tablette">                                <!--Balise crée pour le reponsive-->
               <div class ="reservation__titre"><h1>Réservez le menu qui <br> vous convient</h1></div>
                 <div class="reservation__texte"><p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p></div>
-                  <button type="submit" id="bouton_resa"><p>Explorer nos restaurants</p></button>  
+                  <button type="submit" id="bouton_resa"> Explorer nos restaurants </button>  
           </div>     
         </form>      
       </article>
      
       <nav>                                                                     <!--Fonctionnement en balise nav-->
-        <div class="fonctionnement">    
-          <ul>
-            <div class="fonctionnement__titre"><h1>Fonctionnement</h1></div>
-            <li><span class="icone-fonctionnement"><i class="fa-solid fa-mobile-screen"></i></span><span class="icone-trop-grande">Choisissez un restaurant</span></li>   <!--Comme l'icone est plus grande que les autres elle rajoute du décallage-->
-            <li><span class="icone-fonctionnement"><i class="fa-solid fa-list-ul"></i></span>Composez votre menu</li>
-            <li><span class="icone-fonctionnement"><i class="fa-solid fa-store"></i></span>Dégustez au restaurant</li>
-          </ul>
-              </div>
-        </div>
+        <div class="fonctionnement"> 
+          <span class="fonctionnement__titre">Fonctionnement</span>
+            <ul>
+              <li><span class="icone-fonctionnement"><i class="fa-solid fa-mobile-screen"></i></span><span class="icone-trop-grande">Choisissez un restaurant</span></li>   <!--Comme l'icone est plus grande que les autres elle rajoute du décallage-->
+              <li><span class="icone-fonctionnement"><i class="fa-solid fa-list-ul"></i></span>Composez votre menu</li>
+              <li><span class="icone-fonctionnement"><i class="fa-solid fa-store"></i></span>Dégustez au restaurant</li>
+            </ul>
+          </div>
       </nav>
 
-      <main class="main-accueil">                                                             <!--Partie principale avec les restaurants-->
+    <main>
+      <section class="main-accueil">                                                             <!--Partie principale avec les restaurants-->
         <div class="rang-1">                                                    <!--On créer des rangs pour un meilleur responsive en tablette et +-->
-          <div class="carte">
+          
+          <article class="carte">
             <h1>Restaurants</h1>                                                <!--On rajoute le titre dans la classe carte pour que le titre suive correctement en responsive-->
-            <a href="index_menu_a_la_francaise.html"><div class="carte__image"><img src="../images/la-palette.jpg" class="la-palette" alt="image restaurant la palette du goût"></div>
-              <div class="carte__contenu">
-                <p class="carte__titre">La palette du goût</p>
-                <p class="carte__adresse">Ménilmontant</p>
-                <i class="fa-regular fa-heart"></i>
-                <p class="carte__nouveau">Nouveau</p>
-              </div></a>
-          </div> 
+            <a href="index_palette-gout.html">
+              <div class="carte__image"><img src="../images/la-palette.jpg" class="la-palette" alt="image restaurant la palette du goût"></div>
+                <div class="carte__contenu">
+                  <p class="carte__titre">La palette du goût</p>
+                  <p class="carte__adresse">Ménilmontant</p>
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="carte__nouveau">Nouveau</p>
+                </div>
+            </a>
+          </article> 
 
           
-          <div class="carte carte--2">
-            <div class="carte__image"><img src="../images/note-enchantee.jpg" class="note-enchantee" alt="image restaurant la note enchantée"></div>
-              <div class="carte__contenu">
-                <p class="carte__titre">La note enchantée</p>
-                <p class="carte__adresse">Charonne</p>
-                <i class="fa-regular fa-heart"></i>
-                <p class="carte__nouveau">Nouveau</p>
-              </div>
-          </div>
+          <article class="carte carte--2">
+            <a href="index_note_enchantée.html">
+              <div class="carte__image"><img src="../images/note-enchantee.jpg" class="note-enchantee" alt="image restaurant la note enchantée"></div>
+                <div class="carte__contenu">
+                  <p class="carte__titre">La note enchantée</p>
+                  <p class="carte__adresse">Charonne</p>
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="carte__nouveau">Nouveau</p>
+                </div>
+            </a>
+            </article> 
         </div> 
 
         <div class="rang-2">
-          <div class="carte carte--3">
-            <a href="index_menu_a_la_francaise.html"><div class="carte__image"><img src="../images/a-la-francaise.jpg" class="la-francaise" alt="image restaurant à la française"></div>
-              <div class="carte__contenu">
-                <p class="carte__titre">À la française</p>
-                <p class="carte__adresse">Cité Rouge</p></a>
-                <i class="fa-regular fa-heart"></i>
-              </div>
-          </div> 
+          <article class="carte carte--3">
+            <a href="index_menu_a_la_francaise.html">
+              <div class="carte__image"><img src="../images/a-la-francaise.jpg" class="la-francaise" alt="image restaurant à la française"></div>
+                <div class="carte__contenu">
+                  <p class="carte__titre">À la française</p>
+                  <p class="carte__adresse">Cité Rouge</p>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+            </a>
+          </article> 
 
-          <div class="carte carte--4">
-            <div class="carte__image"><img src="../images/delice-des-sens.jpg" class="delice-des-sens" alt="image restaurant Le délice des sens"></div>
-              <div class="carte__contenu">
-                <p class="carte__titre">Le délice des sens</p>
-                <p class="carte__adresse">Folie-Méricourt</p>
-                <i class="fa-regular fa-heart"></i>
-              </div>
-          </div>
-        </div>   
-      </main>
+          <article class="carte carte--4">
+            <a href="index_delice_sens.html">  
+              <div class="carte__image"><img src="../images/delice-des-sens.jpg" class="delice-des-sens" alt="image restaurant Le délice des sens"></div>
+                <div class="carte__contenu">
+                  <p class="carte__titre">Le délice des sens</p>
+                  <p class="carte__adresse">Folie-Méricourt</p>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+            </a>
+          </article>
+        </div>  
 
+      </section> 
+    </main>
 
-
-      <foother>
-        <div class="foother">
-          <div class="foother__titre">ohmyfood</div>
+    <footer>
+      <div class="foother">
+        <span class="foother__titre">ohmyfood</span>
           <nav class="foother__nav">
             <p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p>
             <p><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</p>
             <p>Mentions légales</p>
             <p><a href="mailto:#">Contact</a></p>
           </nav>
-        </div>
-        
-      </foother>
-
-    </section>
+      </div>
+    </footer>
   </body>
 </html>

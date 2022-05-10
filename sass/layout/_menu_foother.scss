@@ -5,7 +5,7 @@
     {
     background: $background-foother; 
     position: relative;
-   
+    padding-top: 30px;
 
     &__titre
     {
@@ -13,18 +13,18 @@
         margin-left: $marge;
         font-family: 'shrikhandregular';
         font-size: map-get($taille-size, icone);
-        padding-top: 25px;
-        margin-bottom: 20px;
+        
     }
 
     &__nav
     {
         color: white;
         margin-left: $marge;
+        margin-top: 20px;
         justify-content: space-between;
         display: flex;
         flex-direction: column;
-        height: 160px;
+        line-height: 30px;
         padding-bottom: 40px;
         font-size: 15px;
     }
@@ -47,6 +47,7 @@
         padding-left: $marge-t;
         position: relative;
         top: 1050px;
+        padding-top: 30px;
 
         &__titre
         {
@@ -54,18 +55,17 @@
             margin-left: $marge;
             font-family: 'shrikhandregular';
             font-size: map-get($taille-size-t, icone);
-            padding-top: 30px;
-            margin-bottom: 20px;
         }
 
         &__nav
         {
             color: white;
             margin-left: $marge;
+            margin-top: 20px;
             justify-content: space-between;
             display: flex;
             flex-direction: column;
-            height: 160px;
+            line-height: 30px;
             padding-bottom: 30px;
             font-size: 17px;
         }

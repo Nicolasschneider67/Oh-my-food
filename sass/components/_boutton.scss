@@ -6,7 +6,6 @@
             background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
             border: white;
             box-shadow: $ombrage;
-            font-weight: 0.9;
             z-index: 899;
             
             &:hover{@include hover;}
@@ -21,7 +20,6 @@
         background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
         border: white;
         box-shadow: $ombrage;
-        font-weight: 0.9;
         padding-top: 18px;
         padding-bottom: 20px;
         position: absolute;                                                 /*on joue sur la position pour qu'il reste en bas du cadre et centré*/
