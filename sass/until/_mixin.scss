@@ -27,7 +27,6 @@
 {
     font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
     font-size: $taille-size;
-    font-weight: 600;
 }
 
 @mixin souligner ($border-bottom: 1px solid black, $padding-bottom: 5px, $width: auto )

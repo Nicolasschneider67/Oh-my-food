@@ -11,26 +11,17 @@
         } 
 }
 
-@media (min-width: 480px) and (max-width: 768px)
-{
-    
-    #bouton_resa
-    {
-        @include logo-bouton(280px, 70px, 23px, 60px);
-    }
-}
 
 @media (min-width: 769px)  
 {
         #bouton_resa
         {
-            @include logo-bouton(290px, 75px, 30px, 10px);
+            @include logo-bouton(270px, 75px, 25px, 10px);
             background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
             border: white;
             box-shadow: $ombrage;  
             position: relative;
             
             &:hover{@include hover;}
-            p{font-size: map-get($taille-size-t,icone)}
         }
 }

@@ -2,12 +2,11 @@
 {
     #bouton_resa
         {
-            @include logo-bouton(280px, 70px, 21px, 30px);
+            @include logo-bouton(250px, 60px, 17px, 30px);
             background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
             border: white;
             box-shadow: $ombrage;
-            z-index: 899;
-            
+
             &:hover{@include hover;}
         }
 }
@@ -26,7 +25,7 @@
         bottom: 20px;    
         left: 5%;
         right: 5%; 
-        z-index: 899;
+        
 
         &:hover{@include hover;}
     }

@@ -21,7 +21,13 @@
             height: 50px;
             border-top: 3px solid rgba(94, 91, 91, 0.25);
             padding-left: 40px;
-
+            
+            input
+            {
+                font-weight: 600;
+                opacity: 0.7;
+            }
+            
             .fa-location-dot
             {
                 font-size: map-get($taille-size,icone);
@@ -59,6 +65,8 @@
         padding-bottom: 20px;
         height: 70px;
     }
+
+    input {width: 200px;}
 
     .reservation__barre-recherche
     {

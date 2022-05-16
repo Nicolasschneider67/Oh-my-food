@@ -6,7 +6,7 @@
         flex-direction: column;
         margin-top: 15px;
         background: $background;
-        padding-bottom: 80px;
+        padding-bottom: 60px;
 
         
             .icone-plus-barre
@@ -36,22 +36,26 @@
             
             .reservation__titre
             {
-                margin: 40px auto 20px auto;
+                margin: 40px $marge 20px $marge;
                 text-align: center;
-                @include titre (map-get($taille-size, h1));
+                @include titre (18px);
                 line-height: map-get($interligne, h1);
                 font-weight: bold;
-                
             }    
             
             .reservation__texte
             {
-                @extend.reservation__titre;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 10px;
+                padding-right: 10px;
+                text-align: center;
                 margin-top: 15px;
-                max-width: 450px;
-                opacity: 0.8;
+                max-width: 480px;
+                opacity: 0.6;
                 line-height: map-get($interligne,p);
                 font-weight: normal;
+                font-size: map-get($taille-size, logo);
             }
     }
     
@@ -93,7 +97,6 @@
             align-items: center;
             box-shadow: $ombrage;
             @include titre (18px);
-            width: 500px;
 
             &:hover
             {
@@ -268,13 +271,18 @@
         @include titre(map-get($taille-size-t,h1));
         text-align: center;
         line-height: 35px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .reservation__tablette p
     {
         text-align: center;
-        line-height: map-get($interligne,p)
+    }
+
+    .reservation__texte 
+    {
+        font-size: map-get($taille-size-t,p);
+        line-height: 25px;
     }
     
     .fonctionnement                     /*nav*/
@@ -373,7 +381,7 @@
             @include titre(map-get($taille-size-t,h1));
             position: absolute;
             top: 20px;
-            padding-right: 70%;
+            padding-right: 10%;
             padding-bottom: 2px;
             border-bottom: 10px solid $couleur-pr;
             border-bottom-style: double;
@@ -517,7 +525,12 @@
     .reservation__tablette p
     {
         text-align: center;
-        line-height: map-get($interligne,p)
+    }
+
+    .reservation__texte 
+    {
+        font-size: map-get($taille-size-t,p);
+        line-height: 25px;
     }
     
     .fonctionnement                     /*nav*/
@@ -626,7 +639,7 @@
             @include titre(map-get($taille-size-t,h1));
             position: absolute;
             top: 70px;
-            padding-right: 60%;
+            padding-right: 10%;
             padding-bottom: 2px;
             border-bottom: 10px solid $couleur-pr;
             border-bottom-style: double;

@@ -64,6 +64,12 @@
     }
 }
 
+.composition                                /*animation de l'entrée*/
+{
+    -webkit-animation: entree 3s;
+            animation: entree 3s;
+}
+
 @-webkit-keyframes entree
 {
     0%{
@@ -98,6 +104,13 @@
         -webkit-animation-timing-function: cubic-bezier(0,.97,.72,.95);
                 animation-timing-function: cubic-bezier(0,1.44,.72,.95);
     }
+}
+
+.composition--plat                          /*animation des plats*/
+{
+    -webkit-animation: plat 3s 5s;
+            animation: plat 3s 5s forwards;
+            opacity: 0;
 }
 
 @-webkit-keyframes plat
@@ -135,7 +148,12 @@
 }
 
 
-
+.composition--dessert                   /*animation des desserts*/
+{
+    -webkit-animation: dessert 3s 10s;
+            animation: dessert 3s 10s forwards;
+            opacity: 0;
+}
 
 @-webkit-keyframes dessert
 {
