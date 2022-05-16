@@ -1,0 +1,27 @@
+@media (max-width: 768px)  
+{             
+        #bouton_resa
+        {
+            @include logo-bouton(230px, 60px, 19px, 50px,);
+            background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
+            border: white;
+            box-shadow: $ombrage;  
+
+            &:hover{@include hover;}
+        } 
+}
+
+
+@media (min-width: 769px)  
+{
+        #bouton_resa
+        {
+            @include logo-bouton(270px, 75px, 25px, 10px);
+            background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
+            border: white;
+            box-shadow: $ombrage;  
+            position: relative;
+            
+            &:hover{@include hover;}
+        }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/49715e7373.js" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="../style/style_menu.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+              <title>La note enchantée</title>
+    </head>
+
+
+    <body>
+      
+      <header class="header">                                                         <!--en tête-->
+        <div>
+          <a href= ./index.html><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="../images/logo.png" class="logo" alt="logo du site">
+        </div>
+      </header>
+
+      <section class="image-main">                                                        <!--Pour avoir cet effet de superosition nous créons cette classe seule qui sera superposée par le main-->
+        <img src="../images/note-enchantee.jpg" class="la-francaise-menu" alt="image restaurant la note enchantée">
+      </section>
+
+        <main>                    <!--Main-->
+          <div class="menu">  
+            <div class="menu__titre">                           <!--Permet une disposition en space between-->
+              <h1>La note enchantée</h1>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          
+          <article>
+            <div class="composition">
+              <h2 class="composition__titre">entrées</h2>
+                <div class="cadre">                           <!--Cette balise permet de créer le cadre-->
+                  <h3 class="composition__plat">Ravioles de foie gras</h3>                     
+                     <p class="composition__complémentaire">Accompagnés de leur crème à la truffe</p>    
+                      <p class="composition__prix"><strong>25€</strong></p>
+                </div>
+
+                <div class="cadre cadre--plat">               <!--Au départ nous avons créer une classe spécifique pour un space between entre complémentaire et prix mais ingérable pour l'animation-->        
+                  <h3 class="composition__plat">Caviar osciètre</h3>                     
+                    <p class="composition__complémentaire">Sur blini à la farine de blé noir</p>    
+                      <p class="composition__prix"><strong>35€</strong></p>                  
+                </div>
+
+                <div class="cadre cadre--dessert">                           
+                  <h3 class="composition__plat">Homard et espuma de potiron</h3>                      
+                    <p class="composition__complémentaire">Mariné aux zestes d'orange</p>    
+                      <p class="composition__prix"><strong>20€</strong></p>                
+                </div>
+
+                <div class="cadre cadre--dessert">                           
+                    <h3 class="composition__plat">HFoie gras de canard cuit entier</h3>                      
+                      <p class="composition__complémentaire">Confiture de figue et pain toasté</p>    
+                        <p class="composition__prix"><strong>35€</strong></p>                
+                  </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="composition composition--plat">
+              <h2 class="composition__titre">plats</h2>
+                <div class="cadre">                          
+                  <h3 class="composition__plat">Noix de coquilles Saint-Jacques</h3>                        
+                    <p class="composition__complémentaire">Sur lit de purée de céleri-rave</p>    
+                      <p class="composition__prix"><strong>40€</strong></p>                    
+                </div>
+                <div class="cadre cadre--plat">                           
+                  <h3 class="composition__plat">Langoustine poêlée</h3>                       
+                    <p class="composition__complémentaire">Purée de patate douce</p>    
+                      <p class="composition__prix"><strong>35€</strong></p>                   
+                </div>
+                <div class="cadre cadre--dessert">                           
+                  <h3 class="composition__plat">Mijoté de queue de boeuf</h3>                        
+                    <p class="composition__complémentaire">Et riz sauvage aux zestes de citron</p>    
+                      <p class="composition__prix"><strong>44€</strong></p>                    
+                </div>
+            </div>
+          </article>
+          
+          <article>
+            <div class="composition composition--dessert">
+              <h2 class="composition__titre">desserts</h2>
+                <div class="cadre">                           
+                  <h3 class="composition__plat">Macaron noisette et chocolat</h3>                        
+                    <p class="composition__complémentaire">Glace au caramel brun et sel de Guérande</p>    
+                      <p class="composition__prix"><strong>18€</strong></p>                   
+                </div>
+                <div class="cadre cadre--plat">                           
+                  <h3 class="composition__plat">Baba au rhum revisité</h3>                       
+                    <p class="composition__complémentaire">Avec son coulis de citron</p>    
+                      <p class="composition__prix"><strong>22€</strong></p>                   
+                </div>
+                <div class="cadre cadre--dessert">                           
+                  <h3 class="composition__plat">Tarte au citron meringuée</h3>                        
+                      <p class="composition__complémentaire">Déstructurée</p>    
+                      <p class="composition__prix"><strong>23€</strong></p>                  
+                </div>
+            </div>
+          </article>
+
+            <form action="my-handling-form-page" method="post">  
+            <button type="submit" id="bouton_resa"> Commander </button>
+            </form>
+          </div>
+      </main>
+
+      <footer class="foother">
+        <span class="foother__titre">ohmyfood </span>
+          <div class="foother__nav">
+            <p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p>
+            <p><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</p>
+            <p>Mentions légales</p>
+            <p><a href="mailto:#">Contact</a></p>
+          </div>
+      </footer>
+    </body>
+
+      
+
+  </html>

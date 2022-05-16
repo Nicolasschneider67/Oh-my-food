@@ -1,0 +1,75 @@
+@mixin logo-bouton($width: 200px, $height: auto, $font-size: 17px, $margin-top: 25px, $margin-right: auto, $margin-bottom: 0px, $margin-left: auto, $border-radius: 100px, $color: white )
+{
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+    margin: $margin-top $margin-right $margin-bottom $margin-left;
+    display: block;
+    border-radius: $border-radius;
+    color: $color;
+}
+
+@mixin centrer($flex-direction: row,$align-items: normal)
+{
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: center; 
+    align-items: $align-items; 
+}
+
+@mixin marge-auto
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin titre ($taille-size: 17px)
+{
+    font-family: 'robotobold', verdana, arial, helvetica, sans-serif;
+    font-size: $taille-size;
+}
+
+@mixin souligner ($border-bottom: 1px solid black, $padding-bottom: 5px, $width: auto )
+{
+    border-bottom: $border-bottom;
+    padding-bottom: $padding-bottom;
+    width: $width;
+}
+
+@mixin hover 
+{
+    -webkit-filter: brightness(1.2);
+            filter: brightness(1.2);
+    box-shadow: 3px 3px 10px black;
+}
+
+@mixin hover-couleur
+{
+    background: #eeebf1;
+    box-shadow: 3px 3px 10px black;
+}
+
+@mixin animation-coeur ($top: 0px, $right: 0px)
+{
+    content: "\f004";
+    font-family: fontawesome;
+    background: linear-gradient($couleur-pr, $couleur-sec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    right: $right;
+    top: $top;
+    opacity: 0;
+    transition: opacity 1.2s;
+    z-index: 2;            
+}
+
+
+@mixin rognement ($width: 0px)      /*Utilisée pour rogner le texte lors de la selection d'un plat*/
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: $width;
+    overflow: hidden;      
+}

@@ -1,0 +1,86 @@
+@media (max-width: 768px)   
+{
+    .logo                                                  
+    {
+    @include logo-bouton;
+    margin-top: 25px;
+    }
+
+    .reservation                                           
+    {
+    @include centrer;
+    flex-direction: column;
+    margin-top: 15px;
+    background: $background;
+
+    
+        .icone-plus-barre
+        {
+            @include centrer;
+            background: rgba(231, 224, 224, 0.781);
+            height: 50px;
+            border-top: 3px solid rgba(94, 91, 91, 0.25);
+            padding-left: 40px;
+            
+            input
+            {
+                font-weight: 600;
+                opacity: 0.7;
+            }
+            
+            .fa-location-dot
+            {
+                font-size: map-get($taille-size,icone);
+                margin-right: 15px;
+                padding-top: 13px;
+                padding-left: 10px;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px)  
+{
+    header 
+    {
+        background: linear-gradient($couleur-sec, $couleur-pr);
+        margin-top: 0px; 
+    }
+
+    .logo                                                   /*Barre de recherche*/
+    {
+        @include logo-bouton(400px);
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+
+    .icone-plus-barre
+    {
+        @include centrer;
+        height: 50px;   
+        background: $couleur-pr;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        height: 70px;
+    }
+
+    input {width: 200px;}
+
+    .reservation__barre-recherche
+    {
+        font-size: map-get($taille-size-t,logo);
+        border: 0px;
+        background: $couleur-pr;
+    }
+
+    .fa-location-dot
+    {
+        font-size: map-get($taille-size,coeur);
+        margin-right: 15px;
+        padding-top: 7px;
+        padding-left: 10px;  
+    }
+}
+
