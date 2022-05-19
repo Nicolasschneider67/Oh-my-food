@@ -3,8 +3,8 @@
     .la-francaise-menu
     {
         width: 100%;
-        margin-top: 15px;
-        height: 320px;
+        margin-top: 10px;
+        height: 70vw;
         -o-object-fit: cover;
            object-fit: cover;
     }
@@ -29,15 +29,15 @@
                 font-family: 'shrikhandregular', verdana, arial, helvetica, sans-serif;     
                 padding-top: 40px;
                 margin-left: $marge;
-                font-size: 2rem;   
+                font-size: 1.35rem;   
                 margin-right: 30px;                         
             }
         
 
             .fa-heart
             {
-                font-size: 30px;
-                padding-top: 40px;
+                font-size: 25px;
+                padding-top: 35px;
                 margin-right: 35px;
                 opacity: 0.8;
 
@@ -50,7 +50,7 @@
                 }
                 &::after
                     {
-                        @include animation-coeur (40px, 35px);
+                        @include animation-coeur (35px, 35px);
                     }
         
             }
@@ -66,7 +66,7 @@
             &__titre                    /*On adopte une taille de polcie et de bordure en vw pour s'adapter à la résolution*/
             {
                 text-transform: uppercase;
-                font-size: 18px;
+                font-size: map-get($taille-size, p);
                 font-weight: 500;
                 opacity: 0.7;
                 margin-top: 30px;
@@ -81,7 +81,7 @@
                 border-radius: 15px;
                 box-shadow: $ombrage;
                 margin: 5px $marge 10px 0px;
-                height: 70px;
+                height: 60px;
                 overflow: hidden;
                 cursor: url(../images/souris.png), pointer;
                 
@@ -143,6 +143,7 @@
                    @include rognement (100%);
                    padding-right: 60px;
                    transition: 0.8s;
+                   font-size: map-get($taille-size, p);
                }
 
                 .composition__complémentaire
@@ -152,14 +153,16 @@
                     position: relative;
                     @include rognement (100%);
                     transition: 0.8s;
+                    font-size: map-get($taille-size, p);
                 }
 
                 .composition__prix 
                 {
                    position: absolute;
-                   bottom: 10px;
+                   bottom: 9px;
                    right: $marge;
                    transition: 0.8s;
+                   font-size: map-get($taille-size, p);
                 }
             }
     }    
@@ -168,18 +171,22 @@
 
 @media (min-width: 480px) and (max-width: 768px)                          /*On rajoute cette media pour que le titre reste en accord avec la maquette mais pour que l'espace dans le cadre ne soit pas trop vide*/
 {
-    .menu h1 {font-size: 6.5vw};
+    .menu h1 {font-size: 2.4rem};
                                                     /*Permet de mieux remplir le cadre en responsiv tout en respectant le design de la maquette*/
     .composition__prix, .composition__plat, .composition__complémentaire, .composition__titre{font-size: 1.2em !important;}
 
-    .fa-heart {position: absolute; right: 0px;}
+    .fa-heart {position: absolute; right: 0px; font-size: 30px !important; padding-top: 40px !important;}
 
-    &::after {right: 0px !important}
+    &::after {right: 0px !important; top: 40px !important;}
 
     .cadre:hover::after {width: 100px;}          /*Nous aumentons la taille du cadre en bleu et ajustons les marges des éléments associés*/
     .cadre:hover::before {font-size: 45px; top: 15px; right: 1.5%;}
-    .cadre:hover .composition__prix {right: 100px + $marge !important;}
+    .cadre:hover .composition__prix {right: 100px + $marge !important; bottom: 8px !important;}
     .cadre:hover .composition__complémentaire {padding-right: 160px !important;}
+
+    .cadre {height: 70px !important;}
+
+    .la-francaise-menu{max-height: 340px;}
 }           
 
 
@@ -351,6 +358,7 @@
                     padding-top: 7px;
                     font-size: map-get($taille-size-t, p);
                     transition: 0.8s;
+                    margin-left: 20px;
                 }
             }
         }      

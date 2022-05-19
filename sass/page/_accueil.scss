@@ -38,7 +38,7 @@
             {
                 margin: 40px $marge 20px $marge;
                 text-align: center;
-                @include titre (18px);
+                @include titre (16px);
                 line-height: map-get($interligne, h1);
                 font-weight: bold;
             }    
@@ -55,7 +55,7 @@
                 opacity: 0.6;
                 line-height: map-get($interligne,p);
                 font-weight: normal;
-                font-size: map-get($taille-size, logo);
+                font-size: 18px;
             }
     }
     
@@ -83,7 +83,7 @@
 
         &__titre 
         { 
-            @include titre (map-get($taille-size-t,icone)); 
+            @include titre (22px); 
         }
 
         li                                                              /*Affichage de la puce + le cadre*/
@@ -96,7 +96,7 @@
             background: $background; 
             align-items: center;
             box-shadow: $ombrage;
-            @include titre (18px);
+            @include titre (16px);
 
             &:hover
             {
@@ -127,16 +127,16 @@
     {                        
         margin-top: 80px;
         background: $background;
-        height: 1335px;
+        height: 1220px;
         padding-left: $marge;
         padding-right: $marge;
         position: relative;
-        padding-top: 110px;
+        padding-top: 100px;
         margin-bottom: -1000px;
         
         h1
         {   
-            @include titre(24px);
+            @include titre(22px);
             position: absolute;
             top: 50px;
         }
@@ -147,13 +147,13 @@
             margin-bottom: 20px;
             box-shadow: $ombrage;
             border-radius: 25px;
-            height: 275px;
+            height: 245px;
             max-width: 500px;
             
             .la-palette, .note-enchantee, .la-francaise, .delice-des-sens
             {
                 width: 100%;
-                height: 200px;
+                height: 180px;
                 -o-object-fit: cover;
                    object-fit: cover;
                 border-radius: 20px 20px 0px 0px;
@@ -164,7 +164,7 @@
 
             &__titre
             {
-                @include titre(19px);
+                @include titre(16px);
                 margin-left: 15px; 
                 color: black;     
             }
@@ -173,6 +173,7 @@
             {
                 margin-left: 15px;
                 color: black;
+                font-size: map-get($taille-size, p);
             }
 
             .fa-heart
@@ -206,15 +207,15 @@
                 position: absolute;
                 background: $couleur-ter;
                 border-radius: 5px;
-                top: -200px;
+                top: -180px;
                 right: 15px;
-                width: 95px;
+                width: 80px;
                 height: 30px;
                 @include centrer(row, center);
                 color:hsl(160, 86%, 22%);
                 font-weight: bold;
-                font-size: 16px;
-                padding: 20px;
+                font-size: 14px;
+                padding: 10px;
             }
         }
         

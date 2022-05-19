@@ -2,7 +2,7 @@
 {             
         #bouton_resa
         {
-            @include logo-bouton(230px, 60px, 19px, 50px,);
+            @include logo-bouton(200px, 50px, 17px, 40px,);
             background: linear-gradient(to bottom right, $couleur-sec, $couleur-pr);
             border: white;
             box-shadow: $ombrage;  
@@ -11,6 +11,11 @@
         } 
 }
 
+@media (min-width: 480px) and (max-width: 768px)
+{
+    #bouton_resa
+    {@include logo-bouton (220px, 60px, 19px, 40px,);}
+}
 
 @media (min-width: 769px)  
 {

@@ -16,13 +16,18 @@
     color: black;
     }
 
-    .logo{width: 220px;}
+    .logo{width: 180px;}
 
     .la-francaise-menu                                      /*l'image de la section*/
     {
     max-width: 100%;
     margin-top: 15px;
     }
+}
+
+@media (min-width: 480px) and (max-width: 768px)
+{
+    .logo{width: 270px;}
 }
 
 @media (min-width: 769px) and (max-width: 992px)
@@ -47,7 +52,7 @@
     .logo
     {
         padding-bottom: 25px;
-        @include logo-bouton(400px, auto, 17px, 20px);            /*Au vu de la place disponible, on agrandit le logo*/
+        @include logo-bouton(350px, auto, 17px, 20px);            /*Au vu de la place disponible, on agrandit le logo*/
     }
 
 }
